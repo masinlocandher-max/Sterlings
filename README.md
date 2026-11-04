@@ -1,15 +1,24 @@
-# Sterlings
+# THE STERLINGS
 
-Digital spaces company — website and UI planning.
+**Digital Spaces, Thoughtfully Made.** A place online, built around you.
 
-This repository starts with visual design proposals. They describe intended experience; they are not a deployed website or a claim of working software.
+The first website implementation includes a responsive company website, service pages, template gallery, working local website editor, draft workspace and downloadable project briefs.
 
-## Direction
+```sh
+npm ci
+npm run dev
+npm test
+npm run build
+```
 
-A place online, built around you. Proposed launch formats: professional spaces, portfolios, and business websites. Cinematic warmth, readable layouts, and a straightforward inquiry journey.
+Built with React and Vite. The static output is in `dist/`. The build writes route entry points so direct links and refreshes work on static hosting.
 
-## UI concepts
+## Working now
 
-Initial desktop and mobile homepage concepts and implementation notes are being prepared in `design/ui/v1/`.
+Browse four template styles, edit website content and theme, preview desktop/mobile layouts, save drafts in the current browser, and download a standalone HTML website with embedded visual assets. The project brief flow downloads a text file; it does not send an inquiry or place an order.
 
-Company domain, final identity, prices, and delivery capabilities still require confirmation before public launch.
+## Service boundary
+
+Customer authentication, cloud storage, online publishing, domain connection, payments and managed-service fulfillment are not yet connected. The private review site is not a public commercial launch. Pricing and contractual terms remain to be approved.
+
+See [implementation and release notes](docs/IMPLEMENTATION.md) for routes, design decisions, asset provenance and data handling.
