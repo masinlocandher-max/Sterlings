@@ -27,4 +27,7 @@ Open `index.html` in a browser, or deploy the folder to any static host (GitHub 
 
 ### Before launch
 - Set the real inquiry address in `assets/js/main.js` (`INQUIRY_EMAIL`, currently a placeholder), or connect a form service.
+- **Pricing is proposed, not validated.** Studio (from ₱799/mo) and Concierge (from ₱4,999/mo, setup from ₱4,999) are shown publicly. Confirm before launch.
+- **Studio is labelled "Early access"** because the self-service platform (editor, checkout, publishing) is not built yet. Remove the badge and change the Studio CTA once it is live.
+- Define the Concierge "monthly update allowance" (e.g. hours or number of changes) before selling it.
 - Confirm the company name (Sterling Group vs. Sterlings), domain, and final logo.

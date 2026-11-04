@@ -45,11 +45,23 @@ if ('IntersectionObserver' in window) {
   reveals.forEach((el) => el.classList.add('is-visible'));
 }
 
-// Inquiry form — validates, then opens the visitor's email app with a prepared message.
-// Swap this for a form service or your own endpoint when one is chosen.
+// Service path: hero / pricing buttons preselect the path in the form
 const form = document.getElementById('inquiry');
 const status = form.querySelector('.form__status');
+const submitBtn = form.querySelector('button[type=submit]');
+const beginCopy = document.querySelector('.begin__copy');
 
+const applyPath = (path) => {
+  const radio = form.querySelector(`input[name=path][value=${path}]`);
+  if (radio) radio.checked = true;
+  submitBtn.textContent = submitBtn.dataset[`label${path[0].toUpperCase()}${path.slice(1)}`];
+  beginCopy.textContent = beginCopy.dataset[`copy${path[0].toUpperCase()}${path.slice(1)}`];
+};
+form.querySelectorAll('input[name=path]').forEach((r) => r.addEventListener('change', () => applyPath(r.value)));
+document.querySelectorAll('[data-path]').forEach((a) => a.addEventListener('click', () => applyPath(a.dataset.path)));
+
+// Inquiry form — validates, then opens the visitor's email app with a prepared message.
+// Swap this for a form service or your own endpoint when one is chosen.
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   let firstInvalid = null;
@@ -70,8 +82,12 @@ form.addEventListener('submit', (e) => {
   }
 
   const data = new FormData(form);
-  const subject = `New space inquiry — ${data.get('space')}`;
+  const isStudio = data.get('path') === 'studio';
+  const subject = isStudio
+    ? `Studio early access — ${data.get('space')}`
+    : `Concierge proposal request — ${data.get('space')}`;
   const body = [
+    `Service: ${isStudio ? 'Sterling Studio (self-service, early access)' : 'Sterling Concierge (managed)'}`,
     `Name: ${data.get('name')}`,
     `Email: ${data.get('email')}`,
     `Building: ${data.get('space')}`,

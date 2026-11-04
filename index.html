@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sterling Group — A place online, built around you</title>
-  <meta name="description" content="Sterling Group is a digital spaces company. We design and build professional websites, creative portfolios, business platforms, and managed digital environments built around the people behind them.">
+  <meta name="description" content="Sterling Group is a digital spaces company. Build it yourself with Sterling Studio, or let us build and care for it with Sterling Concierge.">
   <meta name="theme-color" content="#14110f">
   <meta property="og:title" content="Sterling Group — A place online, built around you">
   <meta property="og:description" content="We don't simply put you online. We create a place online that is built around you.">
@@ -29,7 +29,7 @@
       </button>
       <nav class="nav__menu" id="nav-menu" aria-label="Primary">
         <a href="#spaces">Spaces</a>
-        <a href="#approach">Approach</a>
+        <a href="#pricing">Pricing</a>
         <a href="#process">Process</a>
         <a href="#philosophy">Philosophy</a>
         <a class="btn btn--small" href="#begin">Begin your space</a>
@@ -46,9 +46,19 @@
           <p class="eyebrow reveal">A digital spaces company</p>
           <h1 class="reveal">A place online,<br><em>built around you.</em></h1>
           <p class="hero__lede reveal">We design, build, and care for digital spaces that reflect the people and organizations behind them — for individuals, professionals, entrepreneurs, creatives, and businesses.</p>
-          <div class="hero__actions reveal">
-            <a class="btn" href="#begin">Begin your space</a>
-            <a class="link-arrow" href="#approach">How we think <span aria-hidden="true">→</span></a>
+
+          <div class="paths reveal" role="group" aria-labelledby="paths-q">
+            <p class="paths__q" id="paths-q">How would you like to begin?</p>
+            <div class="paths__options">
+              <a class="path" href="#begin" data-path="studio">
+                <span class="path__label">I’ll build it</span>
+                <span class="path__meta">Sterling Studio · from ₱799/mo</span>
+              </a>
+              <a class="path path--primary" href="#begin" data-path="concierge">
+                <span class="path__label">Build it for me</span>
+                <span class="path__meta">Sterling Concierge · from ₱4,999/mo</span>
+              </a>
+            </div>
           </div>
         </div>
         <div class="hero__visual" aria-hidden="true">
@@ -108,7 +118,7 @@
       <div class="wrap">
         <div class="section__head">
           <p class="eyebrow">Our spaces</p>
-          <h2 class="reveal">Four kinds of rooms.<br><em>Each one designed around its owner.</em></h2>
+          <h2 class="reveal">Three kinds of rooms.<br><em>Two ways to move in.</em></h2>
         </div>
 
         <div class="spaces">
@@ -132,13 +142,112 @@
             <h3>Business Platforms</h3>
             <p>A functional presence for a working business — your offer, your story, and the paths that turn visitors into clients.</p>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="space reveal">
-            <div class="space__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 44V20a16 16 0 0 1 32 0v24"/><path d="M4 44h40"/><circle cx="24" cy="24" r="5"/><path d="M24 12v4M24 32v4M12 24h4M32 24h4"/></svg></div>
-            <p class="space__for">For those who want it handled</p>
-            <h3>Managed Digital Environments</h3>
-            <p>Your space, looked after. We keep it current, cared for, and working — so you can focus on what you do best.</p>
+    <!-- PRICING: TWO SERVICE MODELS -->
+    <section class="section section--light" id="pricing">
+      <div class="wrap">
+        <div class="split split--head">
+          <div>
+            <p class="eyebrow">Two ways to work with us</p>
+            <h2 class="reveal">You choose how much <em>we carry.</em></h2>
+          </div>
+          <p class="split__body reveal">You pay for the level of care, not the type of website. Build it yourself, or hand it to us — either way, it’s the same Sterling space underneath.</p>
+        </div>
+
+        <div class="models">
+          <!-- STUDIO -->
+          <article class="model reveal" id="studio">
+            <div class="model__top">
+              <p class="model__kind">Self-service</p>
+              <span class="badge">Early access</span>
+            </div>
+            <h3 class="model__name">Sterling Studio</h3>
+            <p class="model__tag">Build it yourself. Sterling powers it.</p>
+            <p class="price"><span class="price__from">From</span> ₱799<span class="price__per">/month</span></p>
+            <p class="price__note">Plans up to ₱2,499/month depending on features. No setup fee.</p>
+            <p class="model__for">For people who want a professional digital space but prefer to build and manage it on their own.</p>
+            <ul class="features">
+              <li>Ready-to-use website templates</li>
+              <li>Visual drag-and-drop editor</li>
+              <li>Edit your own text, images, and branding</li>
+              <li>Managed hosting and security</li>
+              <li>Publish on your own schedule</li>
+              <li>Help center and standard support</li>
+              <li>Feature upgrades when you need them</li>
+            </ul>
+            <p class="model__fine">Custom design and routine content management are not included.</p>
+            <ol class="journey" aria-label="Studio journey">
+              <li>Template</li><li>Editor</li><li>Checkout</li><li>Publish</li>
+            </ol>
+            <a class="btn btn--outline btn--full" href="#begin" data-path="studio">Join early access</a>
           </article>
+
+          <!-- CONCIERGE -->
+          <article class="model model--featured reveal" id="concierge">
+            <div class="model__top">
+              <p class="model__kind">Managed service</p>
+            </div>
+            <h3 class="model__name">Sterling Concierge</h3>
+            <p class="model__tag">Tell us what you need. We take care of it.</p>
+            <p class="price"><span class="price__from">From</span> ₱4,999<span class="price__per">/month</span></p>
+            <p class="price__note">Plans up to ₱14,999+/month. One-time setup from ₱4,999.</p>
+            <p class="model__for">For professionals and businesses who want Sterling to design, launch, maintain, and help manage their digital presence.</p>
+            <ul class="features">
+              <li>Professional setup and customization</li>
+              <li>Content placement and design assistance</li>
+              <li>Domain configuration and publishing</li>
+              <li>Ongoing maintenance</li>
+              <li>A defined monthly update allowance</li>
+              <li>Priority support</li>
+              <li>Optional business integrations</li>
+            </ul>
+            <p class="model__fine">One-time onboarding and custom development charges may apply.</p>
+            <ol class="journey" aria-label="Concierge journey">
+              <li>Brief</li><li>Proposal</li><li>Agreement</li><li>We build</li><li>Launch</li>
+            </ol>
+            <a class="btn btn--full" href="#begin" data-path="concierge">Request a proposal</a>
+          </article>
+        </div>
+
+        <!-- COMPARISON -->
+        <div class="compare reveal">
+          <h3 class="compare__title">Side by side</h3>
+          <div class="compare__scroll" tabindex="0" role="region" aria-label="Plan comparison">
+            <table>
+              <thead>
+                <tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col">Studio</th><th scope="col">Concierge</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Monthly, from</th><td>₱799</td><td>₱4,999</td></tr>
+                <tr><th scope="row">Setup fee</th><td>None</td><td>From ₱4,999</td></tr>
+                <tr><th scope="row">Website editing</th><td>You</td><td>You + Sterling</td></tr>
+                <tr><th scope="row">Template customization</th><td>You</td><td>Sterling-assisted</td></tr>
+                <tr><th scope="row">Hosting</th><td>Included</td><td>Included</td></tr>
+                <tr><th scope="row">Content updates</th><td>You</td><td>Monthly allowance</td></tr>
+                <tr><th scope="row">Support</th><td>Standard</td><td>Priority</td></tr>
+                <tr><th scope="row">Add-ons</th><td>Available</td><td>Available</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- GROWTH PATH -->
+        <div class="growth reveal">
+          <div class="growth__copy">
+            <p class="eyebrow">Room to grow</p>
+            <h3>Start on your own. Bring us in anytime.</h3>
+            <p>Every Sterling space runs on the same foundation. Move from Studio to Concierge, or add what you need — without rebuilding, and without losing your content or your identity.</p>
+          </div>
+          <ul class="addons" aria-label="Add-ons">
+            <li>Design consultation</li>
+            <li>Content migration</li>
+            <li>Booking system</li>
+            <li>Online ordering</li>
+            <li>Full Concierge upgrade</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -147,7 +256,7 @@
     <section class="section section--dark" id="process">
       <div class="wrap">
         <div class="section__head">
-          <p class="eyebrow">How we work</p>
+          <p class="eyebrow">When we build it for you</p>
           <h2 class="reveal">From first idea to <em>long after launch.</em></h2>
         </div>
 
@@ -208,10 +317,18 @@
         <div class="begin__intro">
           <p class="eyebrow">Begin your space</p>
           <h2 class="reveal">Tell us who it’s for.<br><em>We’ll take it from there.</em></h2>
-          <p>Share a little about yourself and what you have in mind. No technical knowledge needed — just tell us what matters to you.</p>
+          <p class="begin__copy" data-copy-studio="Sterling Studio is opening soon. Leave your details and you’ll be among the first invited to build your space." data-copy-concierge="Share a little about yourself and what you have in mind. We’ll reply with a proposal shaped around your goals — no technical knowledge needed.">Share a little about yourself and what you have in mind. We’ll reply with a proposal shaped around your goals — no technical knowledge needed.</p>
         </div>
 
         <form class="form reveal" id="inquiry" novalidate>
+          <fieldset class="field field--choices">
+            <legend>How would you like to begin?</legend>
+            <div class="choices choices--paths">
+              <label><input type="radio" name="path" value="concierge" checked><span><strong>Build it for me</strong> Concierge</span></label>
+              <label><input type="radio" name="path" value="studio"><span><strong>I’ll build it</strong> Studio · early access</span></label>
+            </div>
+          </fieldset>
+
           <div class="field">
             <label for="f-name">Your name</label>
             <input id="f-name" name="name" type="text" autocomplete="name" required>
@@ -227,7 +344,6 @@
               <label><input type="radio" name="space" value="Professional Website" required><span>Professional website</span></label>
               <label><input type="radio" name="space" value="Creative Portfolio"><span>Creative portfolio</span></label>
               <label><input type="radio" name="space" value="Business Platform"><span>Business platform</span></label>
-              <label><input type="radio" name="space" value="Managed Digital Environment"><span>Managed environment</span></label>
               <label><input type="radio" name="space" value="Not sure yet"><span>Not sure yet</span></label>
             </div>
           </fieldset>
@@ -237,7 +353,7 @@
             <textarea id="f-message" name="message" rows="5" required></textarea>
           </div>
 
-          <button class="btn btn--full" type="submit">Send inquiry</button>
+          <button class="btn btn--full" type="submit" data-label-studio="Request early access" data-label-concierge="Request a proposal">Request a proposal</button>
           <p class="form__status" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -251,7 +367,7 @@
         <span class="brand__name">Sterling<span>Group</span></span>
       </a>
       <p class="footer__line">A place online, built around you.</p>
-      <p class="footer__copy">© <span id="year">2026</span> Sterling Group</p>
+      <p class="footer__copy">© <span id="year">2026</span> Sterling Group · Prices in Philippine pesos</p>
     </div>
   </footer>
 
