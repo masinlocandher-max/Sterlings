@@ -1,10 +1,11 @@
 # THE STERLINGS website, first release
 
-The approved brand direction is the 15-page identity presentation created on November 4, 2026. The standalone supplied THE STERLINGS logo is authoritative. Older Sterling Group or teal concepts are superseded.
+The latest user-supplied desktop and mobile homepage UI is the layout authority. The standalone supplied THE STERLINGS logo remains authoritative. See docs/UI-REFERENCE.md and docs/UI-FIDELITY.md for the implemented composition and verification.
 
 ## Implemented
 
-- Responsive homepage, solutions, template gallery, rental, managed website and digital solutions pages.
+- Responsive architectural homepage matching the latest supplied desktop/mobile composition, with four solution paths, process strip, benefits, photographic template carousel and closing banner.
+- Solutions, template gallery, rental, managed website, digital solutions, pricing, about and contact pages.
 - How-it-works page, project brief flow, privacy explanation and preview information.
 - Four template styles with previews, a local editor and a workspace for drafts.
 - Editable headline, description, action, about, services, contact and theme.
@@ -14,7 +15,7 @@ The approved brand direction is the 15-page identity presentation created on Nov
 
 ## Intentional first-release differences from the visual concepts
 
-The navigation says **Workspace**, rather than Sign in, because this version has no customer authentication. The editor says **Download website**, rather than Publish, because live publishing is not connected. The dashboard shows actual local drafts, without invented published sites, billing data or account activity. Template examples are illustrative.
+The supplied navigation labels are implemented; My workspace is available in the footer and phone menu. Customer authentication is not connected. The testimonial composition uses the approved brand promise instead of an unverified customer quote, portrait or star rating. The editor says **Download website**, rather than Publish, because live publishing is not connected. The dashboard shows actual local drafts, without invented published sites, billing data or account activity. Template examples are illustrative.
 
 ## Not connected
 
@@ -32,7 +33,7 @@ Onyx #282723; taupe #8A7A67; sand #C9B8A3; ivory #F5EFE6; cloud #FBF9F6; champag
 
 ## Asset provenance
 
-Logo: user supplied. Editorial and product illustrations: generated for this project using the supplied brand direction. Hero product asset uses the homepage presentation as reference. Website template photograph is a generated ceramic still life. These are not photographs of a real office, customer or deployed product. Files are transcoded to WebP without semantic editing for delivery. Fonts originate from the official Google Fonts repository, with accompanying OFL license files.
+Logo: user supplied. Editorial and product illustrations: generated for this project using the supplied brand direction. The homepage uses newly generated sculptural architecture, ivory folds, a lounge and a workspace photograph, composed to match the supplied UI. Backgrounds are artwork only; all interface text and controls are native HTML/React/SVG. Website template photograph is a generated ceramic still life. These are not photographs of a real office, customer or deployed product. Files are transcoded to WebP without semantic editing for delivery. Fonts originate from the official Google Fonts repository, with accompanying OFL license files.
 
 ## Data boundary
 

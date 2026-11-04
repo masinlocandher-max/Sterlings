@@ -1,4 +1,6 @@
-# First-build verification
+# First-build functional verification
+
+The visual comparison below records the original build. The latest UI reference and current visual verification are documented in **UI-FIDELITY.md**.
 
 2026-11-04. This is an owner-private working website preview, not a launched subscription service.
 
