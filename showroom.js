@@ -14,6 +14,7 @@
   const title = document.getElementById('viewer-title');
   const description = document.getElementById('viewer-description');
   const fullLink = document.getElementById('viewer-open-link');
+  const requestLink = document.getElementById('viewer-request-link');
   if (!selector.length || !frame || !stage || !title || !fullLink) return;
 
   function chooseConcept(id, push = true) {
@@ -26,6 +27,7 @@
     stage.setAttribute('aria-busy','true');
     frame.src = page;
     fullLink.href = page;
+    if (requestLink) requestLink.href = 'index.html?showroom=' + encodeURIComponent(id) + '#contact';
     selector.forEach(button => {
       const active = button.dataset.concept === id;
       button.classList.toggle('is-selected',active);
