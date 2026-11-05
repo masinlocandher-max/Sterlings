@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#f5efe6">
   <meta name="description" content="A hands-on website studio from The Sterlings. Customize a layout, preview your design, and export an HTML website.">
   <title>THE STERLINGS — Your Studio</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="logo-symbol.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="studio.css">
@@ -14,7 +14,7 @@
 <body class="studio-body">
   <a class="skip-link" href="#studio-editor">Skip to editor</a>
   <header class="studio-header">
-    <a class="brand studio-brand" href="index.html" aria-label="The Sterlings home"><span class="brand-symbol" aria-hidden="true"><span>S</span></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a>
+    <a class="brand studio-brand" href="index.html" aria-label="The Sterlings home"><span class="brand-symbol" aria-hidden="true"><img src="logo-symbol.svg" alt=""></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a>
     <span class="studio-header-separator"></span>
     <div class="studio-header-name"><strong>Your Studio</strong><span class="save-indicator" id="save-status" aria-live="polite">Browser draft</span></div>
     <div class="studio-top-actions">
@@ -35,7 +35,7 @@
     </aside>
     <section class="studio-workspace" aria-label="Website preview">
       <div class="canvas-toolbar"><span class="canvas-toolbar-dot"></span> <span id="preview-site-label">Your website</span><span class="canvas-toolbar-right">LIVE PREVIEW <span class="live-dot"></span></span></div>
-      <div class="preview-outer" id="preview-outer"><iframe title="Live preview of your website design" id="site-preview" sandbox=""></iframe></div>
+      <div class="preview-outer" id="preview-outer"><iframe title="Live preview of your website design" id="site-preview" sandbox="allow-same-origin"></iframe></div>
       <div class="workspace-foot"><span>Preview only • Downloaded HTML works independently of The Sterlings Studio.</span><button type="button" id="reset-button">Reset draft</button></div>
     </section>
     <aside class="studio-inspector">
