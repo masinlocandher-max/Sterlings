@@ -129,8 +129,8 @@
       if(previewLabel) previewLabel.textContent=state.siteName || 'Your website';
     },120);
   }
-  function pushHistory(previous){
-    if(!previous || previous===snapshot())return;
+  function pushHistory(previous, force=false){
+    if(!previous || (!force && previous===snapshot()))return;
     if(past[past.length-1]!==previous)past.push(previous);
     if(past.length>60)past.shift();
     future=[];updateHistoryButtons();
@@ -161,7 +161,7 @@
   document.querySelectorAll('[data-template]').forEach(button=>button.addEventListener('click',()=>{
     if(button.dataset.template===template)return;
     if(!window.confirm('Start from the '+button.textContent.trim()+' layout? You can undo this change.'))return;
-    pushHistory(snapshot());
+    pushHistory(snapshot(),true);
     template=button.dataset.template;
     state={...templates[template]};
     setFields();render();save();toast('Starting point changed. You can undo this.');
@@ -213,7 +213,7 @@
   });
   document.getElementById('reset-button').addEventListener('click',()=>{
     if(!window.confirm('Reset this draft to its original layout? You can undo the reset.'))return;
-    pushHistory(snapshot());state={...templates[template]};setFields();render();save();toast('Draft reset.');
+    pushHistory(snapshot(),true);state={...templates[template]};setFields();render();save();toast('Draft reset.');
   });
   document.querySelectorAll('[data-preview-section]').forEach(button=>button.addEventListener('click',()=>{
     document.querySelectorAll('[data-preview-section]').forEach(item=>item.classList.toggle('is-selected',item===button));
