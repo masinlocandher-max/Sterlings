@@ -47,6 +47,7 @@ h1, h2, h3 { font-weight: 400; margin: 0; }
 h1, h2 { font-family: var(--serif); letter-spacing: -.01em; line-height: 1.04; }
 h1 em, h2 em, blockquote em { font-style: italic; color: var(--ember-soft); }
 p { margin: 0; }
+h1, h2, h3, blockquote p, .hero__promise p, .model__tag { text-wrap: balance; }
 ol, ul { list-style: none; margin: 0; padding: 0; }
 
 .wrap { width: 100%; max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
@@ -85,7 +86,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
 .link-arrow:hover span { transform: translateX(4px); }
 
 /* ---------- Brand ---------- */
-.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-light); }
+.brand { display: inline-flex; align-items: center; gap: 12px; padding: 8px 0; text-decoration: none; color: var(--text-light); }
 .brand__mark { width: 22px; height: 28px; color: var(--silver); }
 .brand__name { font-family: var(--serif); font-size: 26px; line-height: 1; display: flex; align-items: baseline; gap: 8px; }
 .brand__name span { font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; color: var(--silver-soft); }
@@ -204,6 +205,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
 .path:hover { border-color: var(--silver-soft); transform: translateY(-2px); }
 .path__label { font-family: var(--serif); font-size: 26px; line-height: 1.1; color: var(--text-light); }
 .path__meta { font-size: 13px; color: var(--muted-light); }
+.path__price { display: block; }
 .path--primary { background: var(--bone); border-color: var(--bone); }
 .path--primary .path__label { color: var(--ink); }
 .path--primary .path__meta { color: var(--muted-dark); }
@@ -239,7 +241,7 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
 .model--featured .model__fine { color: var(--muted-light); }
 .journey { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 6px; margin: auto 0 26px; font-size: 13px; font-weight: 500; }
 .journey li { display: flex; align-items: center; gap: 6px; }
-.journey li + li::before { content: "→"; color: var(--silver-soft); }
+.journey li:not(:last-child)::after { content: "→"; color: var(--silver-soft); }
 .journey li { color: var(--muted-dark); }
 .model--featured .journey li { color: var(--muted-light); }
 .btn--outline { background: transparent; color: var(--ink); border-color: var(--ink); }
@@ -310,6 +312,8 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
 }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--ember); }
 .field.is-invalid input, .field.is-invalid textarea { border-color: #d77a6a; }
+.field.is-invalid > label, .field.is-invalid > legend { color: #e09484; }
+.field--choices.is-invalid .choices span { border-color: rgba(215, 122, 106, .6); }
 .choices { display: flex; flex-wrap: wrap; gap: 10px; }
 .choices label { cursor: pointer; position: relative; }
 .choices input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; pointer-events: none; }
@@ -354,18 +358,22 @@ ol, ul { list-style: none; margin: 0; padding: 0; }
   body { font-size: 16px; }
   .hero { padding-top: 120px; }
   .hero__grid { grid-template-columns: 1fr; }
-  .hero__visual { order: -1; justify-content: flex-start; }
-  .arch { width: 150px; }
+  .hero__grid { position: relative; }
+  .hero__copy { position: relative; z-index: 1; }
+  .hero__visual { position: absolute; top: -40px; right: -12px; opacity: .45; pointer-events: none; }
+  .arch { width: 190px; }
   .hero__promise { margin-top: 64px; flex-direction: column; gap: 4px; }
   .split, .philosophy, .begin__grid { grid-template-columns: 1fr; }
   .spaces, .models, .growth { grid-template-columns: 1fr; }
   .philosophy__block--promise { padding-left: 0; border-left: 0; padding-top: 48px; border-top: 1px solid var(--line-dark); }
-  .values { flex-direction: column; }
+  .values { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
   .values li + li::before { display: none; }
 }
 @media (max-width: 1020px) { .spaces { grid-template-columns: 1fr; } }
 @media (max-width: 560px) {
   .paths__options, .choices--paths { grid-template-columns: 1fr; }
+  .hero__visual { opacity: .22; top: -70px; right: -40px; }
+  .arch { width: 170px; }
   .price { font-size: 48px; }
   .compare table { min-width: 0; font-size: 14px; }
   .compare th, .compare td { padding: 14px 8px; }
