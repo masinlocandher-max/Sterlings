@@ -112,3 +112,35 @@
 .teaser-browser-content>span:first-child,.teaser-browser-content small{color:#26321a;font-weight:700}
 .teaser-browser-content strong{font-family:"Arial Black",Impact,Arial,sans-serif;letter-spacing:-.08em;color:#151615;line-height:.99}
 .teaser-browser-line{background:#141615}
+
+/* CTA refinement: no arrow glyphs or icon font dependencies.
+   A restrained expanding hairline replaces the previous arrow motif. */
+.button{position:relative;overflow:hidden;isolation:isolate;min-height:51px;padding-inline:25px;gap:24px;border-radius:5px;letter-spacing:.015em;box-shadow:inset 0 1px 0 rgba(255,255,255,.12);transition:background-color .24s ease,color .24s ease,border-color .24s ease,box-shadow .24s ease,transform .24s ease}
+.button::after{content:"";display:block;flex:0 0 19px;width:19px;height:1px;background:currentColor;opacity:.68;transition:width .27s ease,flex-basis .27s ease,opacity .27s ease}
+.button:hover::after,.button:focus-visible::after{width:28px;flex-basis:28px;opacity:1}
+.button-dark{background:linear-gradient(115deg,#282723 0%,#39342f 100%);border-color:#282723;color:#fff}
+.button-dark:hover{background:linear-gradient(115deg,#4c4239 0%,#36312b 100%);border-color:#51473e;box-shadow:0 12px 26px rgba(38,30,23,.15)}
+.button-outline{border-color:rgba(76,67,57,.63);background:rgba(255,255,255,.23)}
+.button-outline:hover{background:rgba(255,255,255,.62);box-shadow:0 9px 22px rgba(59,46,35,.08)}
+.button-light{background:#faf7f0;color:#292723;border-color:#e8ded1}
+.button-light:hover{background:#f0e5d8;border-color:#d8c6b1}
+.button:active{transform:translateY(0);box-shadow:inset 0 1px 4px rgba(0,0,0,.09)}
+.button-small{min-height:42px;padding-inline:18px;gap:12px}
+.button-small::after{flex-basis:12px;width:12px}
+.button-small:hover::after{width:18px;flex-basis:18px}
+.button-full{justify-content:space-between;gap:10px}
+.solution-card-marker{display:block;flex:0 0 22px;width:22px;height:1px;background:var(--taupe);opacity:.6;align-self:center;margin-left:auto;transition:transform .24s,opacity .24s}
+.solution-card:hover .solution-card-marker{transform:scaleX(1.35);opacity:1}
+.launch-orbit .orbit-core{position:relative;display:block;width:66px;height:66px;border:2px solid #cdb89b;background:linear-gradient(145deg,rgba(200,160,99,.2),transparent 60%);transform:rotate(45deg);font-size:0}
+.launch-orbit .orbit-core::after{content:"";position:absolute;inset:15px;border:1px solid #b9a78e}
+.mock-floating-label{gap:8px;padding:13px 17px}
+.hero-footer .scroll-cue{display:inline-flex;align-items:center;gap:6px}
+.text-link,.showroom-inquire-link,.footer-bottom>a{transition:color .22s,border-color .22s}
+.footer-bottom>a:hover{color:#f0d1ac}
+@media(max-width:640px){
+ .button{min-height:50px;padding-inline:19px;gap:12px}
+ .button::after{width:16px;flex-basis:16px}
+ .button:hover::after{width:21px;flex-basis:21px}
+ .button-small{min-height:40px}
+}
+@media(prefers-reduced-motion:reduce){.button,.button::after,.solution-card-marker{transition:none}}
