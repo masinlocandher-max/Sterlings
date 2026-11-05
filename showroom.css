@@ -121,3 +121,11 @@
   .showroom-outro-actions{padding:20px 0 0}
 }
 @media(prefers-reduced-motion:reduce){.showroom-option,.showroom-hero-explore,.showroom-teaser-display,.viewer-stage iframe{transition:none}}
+
+/* Clear dual actions: open a real preview or inquire about a related custom design */
+.viewer-footer-actions{display:flex;gap:17px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.viewer-footer-actions>a{font-size:11px;font-weight:700;white-space:nowrap;transition:color .2s}
+.viewer-footer-actions>a:last-child{display:inline-flex;align-items:center;gap:8px;border-bottom:1px solid #8d7a68;padding-bottom:5px}
+.viewer-footer-actions>a:hover{color:#9b7e60}
+.viewer-footer-actions .viewer-request-link{color:#76634e}
+@media(max-width:640px){.viewer-footer-actions{flex-direction:column;gap:11px;align-items:flex-end}.viewer-footer-actions>a{font-size:10px}}
