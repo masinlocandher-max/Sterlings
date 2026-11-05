@@ -19,3 +19,11 @@
 @media(max-width:970px){.studio-showroom-link{display:none}}
 @media(max-width:760px){.studio-sidebar-links{margin-top:20px;flex-direction:row;flex-wrap:wrap;gap:18px}.studio-sidebar-links .back-to-site{display:inline-flex;font-size:11px}}
 @media(max-width:530px){.viewport-buttons button span svg{width:16px;height:16px}}
+
+/* Studio actions match the text-first CTA system without arrow symbols. */
+.studio-preview-button,.studio-export-button{gap:12px}
+.studio-preview-button::after,.studio-export-button::after{width:12px;flex-basis:12px}
+.studio-preview-button:hover::after,.studio-export-button:hover::after{width:17px;flex-basis:17px}
+.studio-export-button{font-weight:700;letter-spacing:.015em}
+#request-launch{letter-spacing:.01em}
+@media(max-width:530px){.studio-export-button{padding-inline:11px;gap:9px}.studio-export-button::after{display:none}}
