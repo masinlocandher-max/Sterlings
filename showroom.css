@@ -129,3 +129,23 @@
 .viewer-footer-actions>a:hover{color:#9b7e60}
 .viewer-footer-actions .viewer-request-link{color:#76634e}
 @media(max-width:640px){.viewer-footer-actions{flex-direction:column;gap:11px;align-items:flex-end}.viewer-footer-actions>a{font-size:10px}}
+
+
+/* Concept identity is intentionally independent of THE STERLINGS.
+   The Showroom frame uses corporate colors; concept imagery does not. */
+.showroom-hero-front{background:#d6fc45;color:#161716;border-color:#f5f5ec}
+.showroom-hero-front>strong{font-family:"Arial Black",Impact,sans-serif;font-weight:900;letter-spacing:-.083em;line-height:.99;font-size:clamp(38px,4.3vw,65px);color:#161716}
+.showroom-hero-front>i{background:#121312}
+.showroom-hero-front .showroom-hero-card-label,.showroom-hero-front .showroom-hero-card-foot{color:#2c3821;font-weight:700}
+.showroom-hero-back{background:#075fd5;border-color:#f5f5ec}
+.showroom-hero-card-image{background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=850&q=83")}
+.showroom-hero-back>span{background:#075fd5;color:white}
+.showroom-option-color{width:35px;height:6px;top:21px;border-radius:8px}
+.color-atelier{background:#d6fc45}
+.color-residence{background:#f06d52}
+.color-business{background:#28e0c2}
+.color-portfolio{background:#bc9cff}
+@media(max-width:640px){
+ .showroom-hero-front>strong{font-size:clamp(26px,6.5vw,39px)}
+ .showroom-option-color{height:5px;width:23px;top:17px}
+}
