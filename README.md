@@ -4,6 +4,27 @@
 
 This repository implements the working frontend of THE STERLINGS, a digital spaces business. It replaces the initial planning-only repository with a responsive corporate website and a browser-based website studio.
 
+
+## Showroom and navigation (2026-11-05)
+
+- showroom.html: interactive public Showroom with four fictional sample brands and selectable live website previews, with desktop/mobile viewport toggles.
+- showroom-preview.html: individual shareable demo sites, selected with a whitelisted space query parameter: atelier, residence, business, portfolio.
+- showroom.js and showroom-preview.js: client-only selection and preview controls, with no customer account requirement.
+- showroom.css and showroom-preview.css: responsive concept designs for creative practice, boutique hospitality, professional services, and personal photography.
+- Navigation: proper desktop Solutions dropdown; mobile overlay menu with focus support, Escape-to-close, link-close, outside-click dismissal, and background scroll lock.
+- Showroom conversion: Discuss this design opens the homepage inquiry with the chosen concept prefilled. The inquiry remains an email-app handoff; no backend submission is implied.
+- No emoji-based interface decoration: symbol-style ornaments replaced with CSS details or SVGs.
+
+**Preview URLs**
+- /showroom.html
+- /showroom.html?concept=residence
+- /showroom-preview.html?space=atelier
+- /showroom-preview.html?space=residence
+- /showroom-preview.html?space=business
+- /showroom-preview.html?space=portfolio
+
+Showroom examples are original marketing demonstrations, not customer references or purchased, production-ready rental templates.
+
 ## Delivered features
 
 - index.html: responsive corporate website based on the supplied Sterlings homepage concept, with solutions, service positioning, process, studio explanation, and inquiry form.
