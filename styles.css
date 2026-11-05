@@ -105,3 +105,10 @@
 .device-icons svg{width:14px;height:14px;display:block}
 .device-icons span{display:flex;align-items:center;justify-content:center;min-width:17px;min-height:19px}
 @media(max-width:640px){.device-icons svg{width:11px;height:11px}.device-icons span{min-width:12px;min-height:14px}}
+
+/* Teaser illustrates a sample creative brand, not THE STERLINGS identity */
+.teaser-browser-image{background-image:url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=84");filter:grayscale(1) contrast(1.15)}
+.teaser-browser-content{background:#d6fc45}
+.teaser-browser-content>span:first-child,.teaser-browser-content small{color:#26321a;font-weight:700}
+.teaser-browser-content strong{font-family:"Arial Black",Impact,Arial,sans-serif;letter-spacing:-.08em;color:#151615;line-height:.99}
+.teaser-browser-line{background:#141615}
