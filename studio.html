@@ -18,8 +18,9 @@
     <span class="studio-header-separator"></span>
     <div class="studio-header-name"><strong>Your Studio</strong><span class="save-indicator" id="save-status" aria-live="polite">Browser draft</span></div>
     <div class="studio-top-actions">
+      <a class="studio-showroom-link" href="showroom.html">Showroom</a>
       <div class="history-buttons"><button type="button" id="undo-button" title="Undo last change" aria-label="Undo">↶</button><button type="button" id="redo-button" title="Redo last change" aria-label="Redo">↷</button></div>
-      <div class="viewport-buttons" role="group" aria-label="Preview screen width"><button type="button" id="desktop-button" class="is-active" aria-pressed="true"><span aria-hidden="true">▣</span> Desktop</button><button type="button" id="mobile-button" aria-pressed="false"><span aria-hidden="true">▯</span> Mobile</button></div>
+      <div class="viewport-buttons" role="group" aria-label="Preview screen width"><button type="button" id="desktop-button" class="is-active" aria-pressed="true"><span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="12" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h8M12 16.5v3.5" stroke="currentColor" stroke-width="1.5"/></svg></span> Desktop</button><button type="button" id="mobile-button" aria-pressed="false"><span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span> Mobile</button></div>
       <button type="button" class="button button-outline studio-preview-button" id="preview-button">Preview ↗</button>
       <button type="button" class="button button-dark studio-export-button" id="export-button">Export HTML ↓</button>
     </div>
@@ -27,11 +28,11 @@
   <main class="studio-layout" id="studio-editor">
     <aside class="studio-left">
       <div class="side-label">YOUR WORKSPACE</div>
-      <div class="side-group"><h2>Pages</h2><button class="side-page is-selected" type="button" data-preview-section="home"><span>▣</span> Home</button><button class="side-page" type="button" data-preview-section="about"><span>▣</span> About</button><button class="side-page" type="button" data-preview-section="services"><span>▣</span> Services</button><button class="side-page" type="button" data-preview-section="contact"><span>▣</span> Contact</button></div>
+      <div class="side-group"><h2>Pages</h2><button class="side-page is-selected" type="button" data-preview-section="home"><span class="page-icon" aria-hidden="true"></span> Home</button><button class="side-page" type="button" data-preview-section="about"><span class="page-icon" aria-hidden="true"></span> About</button><button class="side-page" type="button" data-preview-section="services"><span class="page-icon" aria-hidden="true"></span> Services</button><button class="side-page" type="button" data-preview-section="contact"><span class="page-icon" aria-hidden="true"></span> Contact</button></div>
       <div class="side-divider"></div>
       <div class="side-group"><h2>Starting points</h2><button type="button" class="side-template is-selected" data-template="studio"><span class="template-dot"></span> Creative studio</button><button type="button" class="side-template" data-template="portfolio"><span class="template-dot"></span> Personal portfolio</button><button type="button" class="side-template" data-template="business"><span class="template-dot"></span> Local business</button></div>
-      <div class="sidebar-help"><span class="help-star">✦</span><strong>Made to make it yours.</strong><p>Changes save in this browser. Export your design whenever you're ready.</p></div>
-      <a class="back-to-site" href="index.html">← Back to The Sterlings</a>
+      <div class="sidebar-help"><span class="help-mark" aria-hidden="true"></span><strong>Made to make it yours.</strong><p>Changes save in this browser. Export your design whenever you're ready.</p></div>
+      <div class="studio-sidebar-links"><a class="back-to-site" href="index.html">Back to The Sterlings</a><a class="back-to-site" href="showroom.html">Explore the Showroom</a></div>
     </aside>
     <section class="studio-workspace" aria-label="Website preview">
       <div class="canvas-toolbar"><span class="canvas-toolbar-dot"></span> <span id="preview-site-label">Your website</span><span class="canvas-toolbar-right">LIVE PREVIEW <span class="live-dot"></span></span></div>
@@ -39,7 +40,7 @@
       <div class="workspace-foot"><span>Preview only • Downloaded HTML works independently of The Sterlings Studio.</span><button type="button" id="reset-button">Reset draft</button></div>
     </section>
     <aside class="studio-inspector">
-      <div class="inspector-head"><div><p class="side-label">MAKE IT YOURS</p><h2>Edit your website</h2></div><span class="inspector-symbol">◈</span></div>
+      <div class="inspector-head"><div><p class="side-label">MAKE IT YOURS</p><h2>Edit your website</h2></div><span class="inspector-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21 12 12 21 3 12Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span></div>
       <form id="studio-form" autocomplete="off">
         <fieldset><legend>Identity & headline</legend>
           <label for="site-name">Website name</label><input id="site-name" name="siteName" maxlength="70" value="Aurora Studio">
