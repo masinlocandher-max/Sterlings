@@ -112,7 +112,13 @@
     business: 'Northline Partners — professional services',
     portfolio: 'Isla Frames — personal portfolio'
   };
-  const showroomChoice = new URLSearchParams(window.location.search).get('showroom');
+  const pageParams = new URLSearchParams(window.location.search);
+  const showroomChoice = pageParams.get('showroom');
+  const requestedService = pageParams.get('service');
+  if (serviceField && requestedService && !showroomChoice) {
+    const hasChoice = Array.from(serviceField.options).some(option => option.value === requestedService);
+    if (hasChoice) serviceField.value = requestedService;
+  }
   if (showroomChoice && Object.prototype.hasOwnProperty.call(conceptNames, showroomChoice)) {
     const messageField = document.getElementById('inquiry-message');
     if (serviceField) serviceField.value = 'Managed website';
