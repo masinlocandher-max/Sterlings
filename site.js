@@ -106,6 +106,21 @@
     reveals.forEach(el => observer.observe(el));
   } else reveals.forEach(el => el.classList.add('visible'));
   const serviceField = document.getElementById('inquiry-service');
+  const conceptNames = {
+    atelier: 'Morrow Atelier — creative practice',
+    residence: 'Casa Solenne — hospitality',
+    business: 'Northline Partners — professional services',
+    portfolio: 'Isla Frames — personal portfolio'
+  };
+  const showroomChoice = new URLSearchParams(window.location.search).get('showroom');
+  if (showroomChoice && Object.prototype.hasOwnProperty.call(conceptNames, showroomChoice)) {
+    const messageField = document.getElementById('inquiry-message');
+    if (serviceField) serviceField.value = 'Managed website';
+    if (messageField && !messageField.value.trim()) {
+      messageField.value = 'I would like to discuss a website inspired by the ' + conceptNames[showroomChoice] + ' concept in The Sterlings Showroom. Please share the options for customizing a similar direction for my business.';
+    }
+  }
+
   document.querySelectorAll('[data-service]').forEach(link => {
     link.addEventListener('click',()=>{ if(serviceField) serviceField.value = link.dataset.service; });
   });
