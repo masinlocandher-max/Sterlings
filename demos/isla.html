@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#121116">
+<meta name="description" content="Isla Frames, a fictional photographic journal and editorial portfolio concept.">
+<title>Isla Frames / Photographic journal concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--black:#111115;--panel:#1c1b21;--white:#f1edf4;--muted:#9997a4;--purple:#bc9cff;--hair:#444047}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}body{margin:0;background:var(--black);color:var(--white);font-family:"IBM Plex Sans",Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid var(--purple);outline-offset:4px}::selection{background:var(--purple);color:#17131e}.mono{font:400 10px/1.5 "DM Mono",monospace;letter-spacing:.13em;text-transform:uppercase}
+header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,4vw,65px);min-height:83px;background:#141317;border-bottom:1px solid #34303a}
+.logo{font:400 27px/1 "Bebas Neue",Impact,sans-serif;letter-spacing:.08em}.logo .slash{color:var(--purple);margin:0 8px}.top-nav{display:flex;gap:35px;align-items:center}.top-nav a{font-size:11px;text-transform:uppercase;letter-spacing:.14em}.top-nav a:hover{color:var(--purple)}.header-note{color:var(--purple);font-size:9px}
+.hero{position:relative;display:grid;grid-template-columns:51% 49%;min-height:680px;border-bottom:1px solid var(--hair)}
+.hero-copy{padding:clamp(45px,6vw,93px) 15px 64px clamp(24px,5.6vw,89px);z-index:1;display:flex;flex-direction:column;align-items:start;justify-content:center}
+.hero-kicker{color:var(--purple);margin:0 0 30px}
+.hero h1{font:400 clamp(95px,12vw,195px)/.79 "Bebas Neue",Impact,sans-serif;letter-spacing:-.025em;margin:0 0 36px;white-space:nowrap;position:relative;z-index:2}
+.hero h1 span{color:var(--purple)}
+.hero-copy>p:not(.hero-kicker){font-size:16px;font-weight:300;line-height:1.75;max-width:340px;color:#c5c0c8;margin:0 0 27px}
+.inline-link{display:inline-flex;gap:20px;align-items:center;padding:0 0 10px;border-bottom:1px solid var(--purple);font:500 11px "DM Mono",monospace;color:var(--purple);letter-spacing:.08em}
+.inline-link:hover{color:#fff;border-bottom-color:#fff}
+.hero-img{position:relative;background:url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85") center/cover;filter:saturate(.58) contrast(1.1)}.hero-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,21,.16),transparent 28%),linear-gradient(0deg,rgba(17,17,21,.26),transparent 30%)}
+.hero-side{position:absolute;z-index:2;bottom:31px;right:29px;color:#fff;background:rgba(17,17,21,.42);backdrop-filter:blur(8px);font:400 10px/1.4 "DM Mono",monospace;padding:11px 14px}
+.hero-mark{position:absolute;z-index:3;right:13px;top:24px;writing-mode:vertical-rl;color:#fff;font:400 9px/1.2 "DM Mono",monospace;letter-spacing:.13em}
+.ticker{border-bottom:1px solid var(--hair);padding:17px clamp(20px,4vw,65px);display:flex;align-items:center;justify-content:space-between;gap:20px;color:#a7a0ac}.ticker span:first-child{color:var(--purple)}
+.intro{padding:125px clamp(20px,5.6vw,89px);display:grid;grid-template-columns:1fr 1.7fr;gap:80px;border-bottom:1px solid var(--hair)}
+.intro .mono{color:var(--purple)}.intro h2,.journal h2,.contact h2{font:400 clamp(60px,8vw,127px)/.9 "Bebas Neue",Impact,sans-serif;letter-spacing:.01em;margin:0}
+.intro h2 span,.contact h2 span{color:var(--purple)}.intro-copy>p{font-size:20px;font-weight:300;max-width:670px;line-height:1.65;color:#bdb7c0;margin:0 0 25px}.intro-copy strong{font-weight:500;color:#fff}
+.journal{padding:110px clamp(20px,5.6vw,89px)}.journal-top{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:37px}.journal-top h2{margin-top:12px}.journal-top>p{max-width:320px;font-size:12px;line-height:1.8;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:1.15fr .85fr;grid-auto-rows:360px;gap:21px}.frame{display:block;position:relative;overflow:hidden;padding:0;border:0;background:var(--panel);color:white;cursor:zoom-in;text-align:left}.frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,filter .5s ease;filter:saturate(.6)}.frame:hover img{transform:scale(1.04);filter:saturate(1.05)}.frame:after{content:"";position:absolute;inset:48% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.7));pointer-events:none}.frame .frame-data{position:absolute;z-index:2;bottom:23px;left:24px;right:24px;display:flex;align-items:end;justify-content:space-between;gap:12px}.frame-data strong{font:400 38px/1 "Bebas Neue",sans-serif;letter-spacing:.03em}.frame-data small{font:400 10px/1.3 "DM Mono",monospace;color:#ded8de}.frame:nth-child(1){grid-row:span 2}.frame:nth-child(3){grid-column:2}.frame:nth-child(4){grid-column:1}.frame:nth-child(5){grid-column:2}
+.statement{padding:75px clamp(20px,5.6vw,89px);background:#a58af0;color:#1b1327;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.statement h2{font:400 clamp(55px,8.2vw,126px)/.85 "Bebas Neue",Impact,sans-serif;letter-spacing:.01em;margin:0}.statement p{font-size:18px;font-weight:500;line-height:1.7;margin:0;max-width:550px}
+.contact{padding:120px clamp(20px,5.6vw,89px);display:flex;justify-content:space-between;align-items:end;gap:60px}.contact h2{font-size:clamp(75px,10vw,150px);margin:17px 0 26px}.contact p:not(.mono){max-width:470px;color:#aaa4ae;font-size:14px;line-height:1.8}.contact .mono{color:var(--purple)}.contact a{padding:16px 20px;border:1px solid var(--purple);color:var(--purple);display:inline-flex;align-items:center;gap:19px;font:500 11px "DM Mono",monospace;letter-spacing:.04em;white-space:nowrap}.contact a:hover{background:var(--purple);color:#1c1823}
+footer{padding:29px clamp(20px,4vw,65px);background:#08080b;color:#98929c;display:flex;justify-content:space-between;gap:15px;font:400 9px "DM Mono",monospace;letter-spacing:.09em}footer a{text-decoration:underline}
+dialog{width:min(1100px,calc(100% - 30px));max-width:1100px;max-height:94vh;background:#141418;color:white;border:1px solid #686075;box-shadow:0 23px 100px rgba(0,0,0,.7);padding:15px;overflow:auto}dialog::backdrop{background:rgba(0,0,0,.88)}.dialog-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;font:400 10px "DM Mono",monospace;letter-spacing:.1em}.dialog-top button{background:#e8e1eb;color:#161419;border:0;padding:10px 17px;cursor:pointer;font-size:12px;font-weight:600}.dialog-photo{display:block;width:100%;max-height:74vh;object-fit:contain;background:#0b0b0e}.dialog-caption{font-size:11px;color:#b5abb9;margin:13px 0 4px}
+@media(max-width:1050px){header .header-note{display:none}.hero h1{font-size:clamp(87px,13vw,150px)}.hero{min-height:610px}.intro{gap:30px}.gallery{grid-auto-rows:300px}}
+@media(max-width:670px){header{padding:16px 19px;min-height:65px}.logo{font-size:23px}.top-nav{gap:18px}.top-nav a{font-size:9px}.hero{display:flex;flex-direction:column-reverse;min-height:0}.hero-img{height:380px;flex:0 0 380px}.hero-copy{padding:47px 20px 57px}.hero-kicker{margin-bottom:23px}.hero h1{font-size:clamp(87px,22vw,146px);margin-bottom:24px}.hero-copy>p:not(.hero-kicker){font-size:14px;max-width:350px}.hero-side{bottom:auto;top:320px;right:12px;font-size:8px}.ticker{padding:15px 19px;flex-wrap:wrap;font-size:9px}.intro{padding:76px 20px;display:block}.intro h2,.journal h2,.contact h2{font-size:clamp(65px,15vw,110px)}.intro .mono{display:block;margin-bottom:24px}.intro-copy>p{font-size:15px}.journal{padding:76px 13px}.journal-top{padding:0 7px;display:block}.journal-top>p{font-size:11px;margin-top:15px}.gallery{grid-template-columns:1fr;grid-auto-rows:270px;gap:12px}.frame:nth-child(1){grid-row:span 1;min-height:375px}.frame:nth-child(3),.frame:nth-child(4),.frame:nth-child(5){grid-column:1}.frame-data strong{font-size:31px}.statement{padding:70px 20px;grid-template-columns:1fr;gap:18px}.statement h2{font-size:clamp(64px,16vw,105px)}.statement p{font-size:14px}.contact{padding:85px 20px;display:block}.contact h2{font-size:clamp(82px,19vw,128px)}.contact a{margin-top:24px}footer{padding:22px 18px;flex-wrap:wrap;font-size:8px}.dialog-photo{max-height:68vh}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.frame img{transition:none}}
+</style></head>
+<body>
+<header><a class="logo" href="#top">ISLA<span class="slash">/</span>FRAMES</a><nav class="top-nav" aria-label="Site navigation"><a href="#story">The story</a><a href="#journal">Journal</a><a href="#contact">Connect</a></nav><span class="header-note mono">PHOTOGRAPHIC JOURNAL / CONCEPT</span></header>
+<main id="top">
+<section class="hero"><div class="hero-copy"><p class="hero-kicker mono">NOT EVERYTHING NEEDS WORDS / VOL. 01</p><h1>LOOK<br><span>CLOSER.</span></h1><p>A visual journal about people, places, and the beautiful pauses in between.</p><a class="inline-link" href="#journal">EXPLORE THE FRAMES <span aria-hidden="true">SCROLL</span></a></div><div class="hero-img" role="img" aria-label="Expansive landscape captured in warm late-afternoon light"><span class="hero-mark">THE ART OF NOTICING</span></div><span class="hero-side">STUDY / MEMORY / LIGHT</span></section>
+<div class="ticker mono"><span>ISLA FRAMES / ISSUE 001</span><span>PEOPLE / PLACES / IN BETWEEN</span><span>LOOK BEYOND THE OBVIOUS</span></div>
+<section id="story" class="intro"><div><span class="mono">01 / A WAY OF SEEING</span><h2>AN EYE<br>FOR THE<br><span>ORDINARY.</span></h2></div><div class="intro-copy"><p>The best photographs are not always about the moment itself. <strong>They are about everything that moment makes us remember.</strong></p><p>This imagined portfolio makes room for silence, distance, texture, and the feeling of being somewhere you want to keep.</p></div></section>
+<section class="journal" id="journal"><div class="journal-top"><div><span class="mono" style="color:var(--purple)">02 / THE VISUAL JOURNAL</span><h2>SELECTED FRAMES.</h2></div><p>Click a frame for a closer look. These are illustrative photographs used in a fictional website design.</p></div>
+<div class="gallery">
+<button type="button" class="frame" data-caption="Horizon / Landscape study"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85" alt="Landscape with soft late-afternoon sunlight" loading="lazy"><span class="frame-data"><strong>HORIZON</strong><small>01 / LANDSCAPE</small></span></button>
+<button type="button" class="frame" data-caption="Wavelength / Ocean study"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1000&q=85" alt="Ocean swells captured in a wide composition" loading="lazy"><span class="frame-data"><strong>WAVELENGTH</strong><small>02 / WATER</small></span></button>
+<button type="button" class="frame" data-caption="Elsewhere / Wilderness study"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85" alt="Forest landscape filled with green trees" loading="lazy"><span class="frame-data"><strong>ELSEWHERE</strong><small>03 / WILDERNESS</small></span></button>
+<button type="button" class="frame" data-caption="Stillness / Lakeside study"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1000&q=85" alt="Lake and mountain landscape reflected in water" loading="lazy"><span class="frame-data"><strong>STILLNESS</strong><small>04 / MOUNTAIN</small></span></button>
+<button type="button" class="frame" data-caption="City Hours / Streets study"><img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1000&q=85" alt="Dense city skyline photographed from above" loading="lazy"><span class="frame-data"><strong>CITY HOURS</strong><small>05 / URBAN</small></span></button>
+</div></section>
+<section class="statement"><h2>SOME THINGS<br>STAY WITH YOU.</h2><p>Images can be more than decoration. They can hold the weight of a feeling and give a quiet story room to be heard.</p></section>
+<section class="contact" id="contact"><div><span class="mono">03 / A NEW PERSPECTIVE</span><h2>THE NEXT<br><span>FRAME.</span></h2><p>Isla Frames is a fictional photography project created to demonstrate a portfolio experience. It is not a client reference or an operating photography business.</p></div><a href="../showroom.html?concept=portfolio">RETURN TO SHOWROOM <span aria-hidden="true">VIEW CONCEPT</span></a></section>
+</main>
+<footer><span>ISLA FRAMES / FICTIONAL PHOTOGRAPHY JOURNAL</span><a href="../showroom.html">THE STERLINGS SHOWROOM</a></footer>
+<dialog id="photo-dialog" aria-label="Selected photograph"><div class="dialog-top"><span>ISLA FRAMES / CLOSE VIEW</span><button type="button" id="close-dialog">CLOSE</button></div><img id="dialog-image" class="dialog-photo" alt=""><p class="dialog-caption" id="dialog-caption"></p></dialog>
+<script>
+(function(){
+  "use strict";
+  const dialog=document.getElementById("photo-dialog"),view=document.getElementById("dialog-image"),caption=document.getElementById("dialog-caption");
+  const close=document.getElementById("close-dialog");
+  if(!dialog||!view||!caption||!close)return;
+  for(const button of document.querySelectorAll(".frame")){
+    button.addEventListener("click",function(){
+      const img=button.querySelector("img");
+      if(!img)return;
+      view.src=img.currentSrc || img.src;view.alt=img.alt;caption.textContent=button.dataset.caption || "";
+      if(typeof dialog.showModal==="function")dialog.showModal();
+    });
+  }
+  close.addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("click",event=>{if(event.target===dialog)dialog.close();});
+  dialog.addEventListener("close",()=>{view.removeAttribute("src");});
+})();
+</script>
+</body></html>
