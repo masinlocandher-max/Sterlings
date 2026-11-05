@@ -27,21 +27,40 @@
         <span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span>
       </a>
       <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#solutions">Solutions <span class="nav-chevron" aria-hidden="true">⌄</span></a>
-        <a href="#studio">The Studio</a>
+        <div class="nav-dropdown" data-nav-dropdown>
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="solutions-dropdown">Solutions <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="nav-dropdown-panel" id="solutions-dropdown" hidden>
+            <p class="dropdown-heading">WAYS TO WORK WITH US</p>
+            <a href="#solutions"><span>Overview</span><small>Explore every way to get online</small></a>
+            <a href="studio.html"><span>Build it yourself</span><small>Design and export in our browser studio</small></a>
+            <a href="#solutions"><span>Website rental</span><small>Inquire about a managed digital space</small></a>
+            <a href="#contact"><span>Managed websites</span><small>A more personal, hands-on approach</small></a>
+          </div>
+        </div>
+        <a href="showroom.html">Showroom</a>
         <a href="#how-it-works">How it works</a>
         <a href="#about">Our approach</a>
       </nav>
       <div class="nav-actions">
         <a class="nav-signin" href="studio.html">Open studio</a>
-        <a class="button button-dark button-small" href="#contact">Get started <span aria-hidden="true">↗</span></a>
+        <a class="button button-dark button-small" href="#contact">Get started <svg class="nav-inline-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 16 16 4M8 4h8v8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span></button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span></button>
     </div>
     <nav id="mobile-navigation" class="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#solutions">Solutions</a><a href="#studio">The Studio</a><a href="#how-it-works">How it works</a><a href="#about">Our approach</a>
-      <a href="studio.html">Open studio</a><a class="mobile-cta" href="#contact">Get started ↗</a>
+      <div class="mobile-nav-scroll">
+        <p class="mobile-nav-eyebrow">DISCOVER THE STERLINGS</p>
+        <a class="mobile-nav-feature" href="showroom.html"><span><strong>Showroom</strong><small>Explore live website concepts</small></span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="#solutions"><span>Solutions</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="studio.html"><span>Website Studio</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="#how-it-works"><span>How it works</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="#about"><span>Our approach</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <div class="mobile-nav-actions">
+          <a class="mobile-nav-primary" href="#contact">Start a project <span aria-hidden="true">Get in touch</span></a>
+        </div>
+      </div>
     </nav>
+    <div class="menu-backdrop" hidden aria-hidden="true"></div>
   </header>
   <main id="main">
     <section class="hero">
@@ -56,7 +75,7 @@
             <a class="button button-dark" href="studio.html">Build my website <span aria-hidden="true">↗</span></a>
             <a class="button button-outline" href="#solutions">Explore managed plans <span aria-hidden="true">→</span></a>
           </div>
-          <div class="hero-note"><span class="note-icon" aria-hidden="true">✦</span><span>Beautifully considered. Built for real life.</span></div>
+          <div class="hero-note"><span class="note-line" aria-hidden="true"></span><span>Beautifully considered. Built for real life.</span></div>
         </div>
         <div class="hero-art reveal" aria-label="Preview of The Sterlings website studio interface" role="img">
           <div class="preview-back preview-back-two"><div class="preview-back-top"></div><div class="preview-scene preview-scene-two"></div></div>
@@ -96,6 +115,22 @@
       </div>
     </section>
 
+    <section class="showroom-teaser" id="showroom">
+      <div class="container showroom-teaser-inner">
+        <div class="showroom-teaser-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE STERLINGS SHOWROOM</p>
+          <h2>See the space<br><em>before you make it yours.</em></h2>
+          <p>Explore four distinct website concepts, from editorial portfolios to hospitality and business spaces. Experience the layouts in desktop and mobile views.</p>
+          <a href="showroom.html" class="button button-dark">Explore the showroom <span aria-hidden="true">↗</span></a>
+          <p class="showroom-note">Illustrative website concepts, not commissioned client work.</p>
+        </div>
+        <a href="showroom.html" class="showroom-teaser-display reveal" aria-label="Explore showroom concepts">
+          <div class="showroom-teaser-browser"><div class="teaser-browser-top"><span class="teaser-browser-dots"><i></i><i></i><i></i></span><span>THE STERLINGS / SHOWROOM</span></div><div class="teaser-browser-body"><div class="teaser-browser-image"></div><div class="teaser-browser-content"><span>01 / ATELIER</span><strong>A canvas<br>for the<br>exceptional.</strong><span class="teaser-browser-line"></span><small>Explore the collection</small></div></div></div>
+          <div class="teaser-floating-caption">FOUR SPACES. FOUR POSSIBILITIES.</div>
+        </a>
+      </div>
+    </section>
+
     <section class="feature-section" id="studio">
       <div class="container feature-layout">
         <div class="feature-photo reveal"><div class="photo-tag"><span class="photo-tag-square"></span> THE ART OF BEING ONLINE</div><div class="feature-photo-inner"><div class="feature-photo-overlay"></div><div class="feature-quote">Space for<br>something<br><em>extraordinary.</em></div></div></div>
@@ -122,7 +157,7 @@
 
     <section class="contact-section section-pad" id="contact">
       <div class="container contact-grid">
-        <div class="contact-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p><h2>Let's give your<br>idea a <em>home.</em></h2><p>Share a few details. We'll prepare an email brief you can send directly to our business inbox.</p><div class="contact-assurance"><span aria-hidden="true">✦</span><span>No account needed. No obligation. Just a conversation about what fits.</span></div></div>
+        <div class="contact-copy reveal"><p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p><h2>Let's give your<br>idea a <em>home.</em></h2><p>Share a few details. We'll prepare an email brief you can send directly to our business inbox.</p><div class="contact-assurance"><span class="assurance-mark" aria-hidden="true"></span><span>No account needed. No obligation. Just a conversation about what fits.</span></div></div>
         <form class="contact-form reveal" id="inquiry-form">
           <div class="form-heading"><h3>Tell us about your space</h3><span>01—04</span></div>
           <div class="form-row"><label for="inquiry-name">Your name <span>*</span><input id="inquiry-name" name="name" autocomplete="name" placeholder="What should we call you?" maxlength="120" required></label><label for="inquiry-email">Email address <span>*</span><input id="inquiry-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required></label></div>
@@ -134,6 +169,6 @@
       </div>
     </section>
   </main>
-  <footer class="footer"><div class="container footer-main"><div><a class="brand brand-footer" href="#top" aria-label="The Sterlings, back to top"><span class="brand-symbol" aria-hidden="true"><img src="logo-symbol-reversed.svg" alt=""></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a><p>A place online, built around you.</p></div><div class="footer-links"><a href="#solutions">Solutions</a><a href="studio.html">The Studio</a><a href="#how-it-works">How it works</a><a href="#contact">Get in touch</a></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> THE STERLINGS. DIGITAL SPACES, THOUGHTFULLY MADE.</span><a href="#top">BACK TO TOP ↑</a></div></footer>
+  <footer class="footer"><div class="container footer-main"><div><a class="brand brand-footer" href="#top" aria-label="The Sterlings, back to top"><span class="brand-symbol" aria-hidden="true"><img src="logo-symbol-reversed.svg" alt=""></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a><p>A place online, built around you.</p></div><div class="footer-links"><a href="#solutions">Solutions</a><a href="studio.html">The Studio</a><a href="showroom.html">Showroom</a><a href="#how-it-works">How it works</a><a href="#contact">Get in touch</a></div></div><div class="container footer-bottom"><span>© <span id="year">2026</span> THE STERLINGS. DIGITAL SPACES, THOUGHTFULLY MADE.</span><a href="#top">BACK TO TOP ↑</a></div></footer>
 </body>
 </html>
