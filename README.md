@@ -5,25 +5,30 @@
 This repository implements the working frontend of THE STERLINGS, a digital spaces business. It replaces the initial planning-only repository with a responsive corporate website and a browser-based website studio.
 
 
-## Showroom and navigation (2026-11-05)
+## Showroom and navigation (2026-11-05 — redesigned)
 
-- showroom.html: interactive public Showroom with four fictional sample brands and selectable live website previews, with desktop/mobile viewport toggles.
-- showroom-preview.html: individual shareable demo sites, selected with a whitelisted space query parameter: atelier, residence, business, portfolio.
-- showroom.js and showroom-preview.js: client-only selection and preview controls, with no customer account requirement.
-- showroom.css and showroom-preview.css: responsive concept designs for creative practice, boutique hospitality, professional services, and personal photography.
-- Navigation: proper desktop Solutions dropdown; mobile overlay menu with focus support, Escape-to-close, link-close, outside-click dismissal, and background scroll lock.
-- Showroom conversion: Discuss this design opens the homepage inquiry with the chosen concept prefilled. The inquiry remains an email-app handoff; no backend submission is implied.
-- No emoji-based interface decoration: symbol-style ornaments replaced with CSS details or SVGs.
+The Showroom keeps the Sterlings corporate identity in its surrounding interface, but previews are four **independent fictional brand worlds**, each with its own code and visual system:
 
-**Preview URLs**
+- demos/morrow.html — Morrow Atelier: experimental brutalism, acid yellow-green, black, oversized Archivo typography, staggered case-study layout.
+- demos/casa.html — Casa Solenne: cobalt blue, coral, coastal photography, playful Fraunces typography, hospitality-first immersive hero and rooms.
+- demos/northline.html — Northline Partners: dark teal and mint, Manrope and IBM Plex Mono, abstract strategic diagram, structured expertise accordions, no invented performance metrics.
+- demos/isla.html — Isla Frames: black and violet, oversized Bebas Neue typography, full-bleed photography, asymmetric journal grid, accessible image lightbox.
+
+These examples have distinct typography, page architecture, interactions, and color palettes, intentionally *unlike* The Sterlings' warm taupe, ivory and architectural identity.
+
+The showroom.html interface embeds each actual demo via an iframe and supports desktop/mobile preview, a full-page link, and a contextual Discuss this design inquiry. showroom.js manages selection. Old shared showroom-preview.html?space=... links redirect to new pages. All are fictional demonstrations, not production rental templates, customer references, or real client businesses.
+
+Navigation includes a desktop Solutions dropdown and a mobile drawer with backdrop, keyboard support, Escape-to-close, and body scroll locking. Decorative emoji-like elements are not used.
+
+**Direct preview URLs:**
 - /showroom.html
-- /showroom.html?concept=residence
-- /showroom-preview.html?space=atelier
-- /showroom-preview.html?space=residence
-- /showroom-preview.html?space=business
-- /showroom-preview.html?space=portfolio
+- /demos/morrow.html
+- /demos/casa.html
+- /demos/northline.html
+- /demos/isla.html
 
-Showroom examples are original marketing demonstrations, not customer references or purchased, production-ready rental templates.
+**Operational note:** The pages use Google Fonts and remote Unsplash images. For production reliability and appropriate commercial usage rights, replace externally hosted demo imagery with reviewed, hosted assets.
+
 
 ## Delivered features
 
