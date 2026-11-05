@@ -115,7 +115,7 @@
   const showroomChoice = new URLSearchParams(window.location.search).get('showroom');
   if (showroomChoice && Object.prototype.hasOwnProperty.call(conceptNames, showroomChoice)) {
     const messageField = document.getElementById('inquiry-message');
-    if (serviceField) serviceField.value = 'Managed website';
+    if (serviceField) serviceField.value = 'Sterling Concierge (managed)';
     if (messageField && !messageField.value.trim()) {
       messageField.value = 'I would like to discuss a website inspired by the ' + conceptNames[showroomChoice] + ' concept in The Sterlings Showroom. Please share the options for customizing a similar direction for my business.';
     }

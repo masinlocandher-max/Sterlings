@@ -30,6 +30,23 @@ Navigation includes a desktop Solutions dropdown and a mobile drawer with backdr
 **Operational note:** The pages use Google Fonts and remote Unsplash images. For production reliability and appropriate commercial usage rights, replace externally hosted demo imagery with reviewed, hosted assets.
 
 
+## Service models and pricing (proposed)
+
+The homepage `#solutions` section presents two service models. They replace the earlier three paths (build it yourself / rent a website / managed website).
+
+| | Sterling Studio (self-service) | Sterling Concierge (managed) |
+|---|---|---|
+| Monthly | From ₱799 (up to ₱2,499) | From ₱4,999 (up to ₱14,999+) |
+| Setup fee | None | From ₱4,999 |
+| Editing | Client | Client + Sterling |
+| Content updates | Client | Defined monthly allowance |
+| Support | Standard | Priority |
+
+- **These prices are proposed, not validated.** Confirm them before public marketing.
+- **Studio is labelled "Hosted plans opening soon".** The browser editor works today; hosting, checkout and publishing do not. The Studio card's main action opens the existing editor. Remove the label only once hosted plans can actually be bought.
+- **Define the Concierge "monthly update allowance"** (hours or number of changes) before selling it.
+- Plan anchors: `#studio-plan`, `#concierge-plan`, `#compare`. The inquiry form options are `Sterling Studio (self-service)` and `Sterling Concierge (managed)`; plan buttons and Showroom links preselect them.
+
 ## Delivered features
 
 - index.html: responsive corporate website based on the supplied Sterlings homepage concept, with solutions, service positioning, process, studio explanation, and inquiry form.
