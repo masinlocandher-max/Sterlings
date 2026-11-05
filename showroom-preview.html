@@ -1,77 +1,15 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <meta name="theme-color" content="#f3eee6">
-  <title>Morrow Atelier — The Sterlings Showroom Concept</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="showroom-preview.css">
-  <script src="showroom-preview.js" defer></script>
-</head>
-<body data-space="atelier">
-  <div class="demo-website" id="home">
-    <header class="demo-header">
-      <a class="demo-brand" href="#home" aria-label="Concept homepage" id="demo-brand">MORROW <span>ATELIER</span></a>
-      <nav class="demo-nav" aria-label="Concept site navigation">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="demo-header-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
-    </header>
-    <main>
-      <section class="demo-hero" aria-labelledby="demo-headline">
-        <div class="demo-hero-copy">
-          <p class="demo-eyebrow" id="demo-eyebrow">THE ART OF INTENTIONAL DESIGN</p>
-          <h1 id="demo-headline">Artfully<br><em>considered.</em></h1>
-          <div class="demo-small-rule" aria-hidden="true"></div>
-          <p id="demo-intro">An independent creative practice crafting enduring identities and meaningful experiences.</p>
-          <a class="demo-primary-link" href="#services"><span id="demo-action-label">Discover our work</span><span class="demo-arrow" aria-hidden="true">↗</span></a>
-        </div>
-        <div class="demo-hero-media" id="demo-hero-media" role="img" aria-label="Architectural interior with natural materials">
-          <span class="demo-media-caption" id="demo-media-caption">FORM / LIGHT / FEELING</span>
-        </div>
-        <div class="demo-hero-side-label" aria-hidden="true">A THOUGHTFUL WAY FORWARD</div>
-      </section>
-      <div class="demo-marquee" aria-hidden="true">
-        <span id="demo-marquee-left">CREATIVE DIRECTION &nbsp; / &nbsp; DESIGN</span>
-        <span id="demo-marquee-right">INDEPENDENT BY NATURE</span>
-      </div>
-      <section class="demo-about demo-section" id="about">
-        <div class="demo-section-label"><span>01 / THE STORY</span></div>
-        <div class="demo-about-body">
-          <p class="demo-section-kicker" id="demo-about-kicker">THE PRACTICE</p>
-          <h2 id="demo-about-heading">Beauty is found in<br><em>the details.</em></h2>
-          <p id="demo-about-text">We bring a thoughtful point of view to every project, pairing striking design with clarity of purpose. Our process is personal, considered, and built for the long term.</p>
-        </div>
-      </section>
-      <section class="demo-services demo-section" id="services">
-        <div class="demo-section-label"><span>02 / WHAT WE DO</span></div>
-        <div class="demo-services-body">
-          <p class="demo-section-kicker">OUR WORK</p>
-          <h2 id="demo-services-heading">Selected disciplines.</h2>
-          <div class="demo-service-list">
-            <article class="demo-service-card"><span>01</span><h3>Brand identity</h3><p>Distinctive design, carefully built.</p></article>
-            <article class="demo-service-card"><span>02</span><h3>Art direction</h3><p>A coherent vision for every detail.</p></article>
-            <article class="demo-service-card"><span>03</span><h3>Digital spaces</h3><p>Presence that reflects your story.</p></article>
-          </div>
-        </div>
-      </section>
-      <section class="demo-contact demo-section" id="contact">
-        <p class="demo-section-kicker">03 / THE NEXT CHAPTER</p>
-        <h2 id="demo-contact-heading">Let's make something<br><em>meaningful.</em></h2>
-        <p id="demo-contact-copy">This is a fictional design demonstration created for The Sterlings Showroom.</p>
-        <a href="showroom.html" class="demo-contact-action">Return to The Sterlings Showroom <span aria-hidden="true">↗</span></a>
-      </section>
-    </main>
-    <footer class="demo-footer">
-      <span id="demo-footer-brand">MORROW ATELIER</span>
-      <span>SHOWROOM CONCEPT / NOT A LIVE BUSINESS</span>
-    </footer>
-  </div>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Opening Showroom concept</title>
+<style>body{font:16px/1.6 system-ui,Arial,sans-serif;background:#141719;color:#f6f6f3;min-height:100vh;display:grid;place-items:center;margin:0;padding:25px}main{max-width:430px;text-align:center}a{color:#aeeedb}p{color:#d0d4d2}</style>
+</head><body><main><h1>Opening the new concept</h1><p>Each Showroom design now has its own visual identity and independent website.</p><a id="fallback" href="demos/morrow.html">Open website preview</a></main>
+<script>
+(function(){
+  'use strict';
+  const routes={atelier:'demos/morrow.html',residence:'demos/casa.html',business:'demos/northline.html',portfolio:'demos/isla.html'};
+  const space=new URLSearchParams(location.search).get('space');
+  const path=Object.prototype.hasOwnProperty.call(routes,space)?routes[space]:routes.atelier;
+  document.getElementById('fallback').href=path;
+  location.replace(path);
+})();
+</script>
+</body></html>
