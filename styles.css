@@ -144,3 +144,191 @@
  .button-small{min-height:40px}
 }
 @media(prefers-reduced-motion:reduce){.button,.button::after,.solution-card-marker{transition:none}}
+
+
+/* Clarity-led positioning — intentional addition to the approved Sterlings system. */
+html{scroll-padding-top:100px}
+#who-we-help,#digital-spaces,#digital-solutions,#solutions,#questions,#contact,#about,#how-it-works{scroll-margin-top:100px}
+.hero h1{font-size:clamp(45px,4.6vw,67px);white-space:normal;max-width:680px;line-height:1.13}
+.hero-description{max-width:490px}
+.hero-description strong{font-weight:700;color:#3b352e}
+.hero-note{max-width:510px;line-height:1.65}
+.hero-buttons{align-items:stretch}
+.hero-buttons .button{min-width:185px}
+.hero-footer>span:last-child{color:#8b7b69}
+.nav-shell{gap:14px}
+.desktop-nav{gap:22px;margin-right:4px}
+.nav-actions{gap:14px}
+.nav-dropdown-panel{min-width:330px}
+.mobile-nav-feature strong{font-size:25px}
+.mobile-nav-feature small{line-height:1.5}
+.form-fineprint a{color:#6d5340;text-decoration:underline;text-underline-offset:3px}
+
+/* Who we help — start with customers, not abstractions. */
+.audience-section{background:#f3ede5;border-top:1px solid rgba(123,100,78,.1)}
+.audience-intro{display:flex;align-items:end;justify-content:space-between;gap:54px;margin-bottom:37px}
+.audience-intro h2,.offerings-header h2,.faq-heading h2{font:400 clamp(38px,3.9vw,57px)/1.2 var(--serif);letter-spacing:-.058em;margin:17px 0 0}
+.audience-intro h2 em,.offerings-header h2 em,.faq-heading h2 em{font-style:normal;color:var(--taupe)}
+.audience-intro>p{max-width:365px;color:#766c62;font-size:13px;line-height:1.85;margin:0 0 4px}
+.audience-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.audience-card{display:flex;flex-direction:column;min-height:298px;padding:25px 23px 22px;background:linear-gradient(154deg,rgba(255,255,255,.9),rgba(247,242,234,.78));border:1px solid #e2d8cc;border-radius:7px;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.audience-card:hover{transform:translateY(-5px);border-color:#bfa68b;box-shadow:0 20px 36px rgba(56,41,24,.07)}
+.audience-index{font-size:8px;letter-spacing:.17em;font-weight:700;color:#a08a73;padding-bottom:27px}
+.audience-card h3{font:400 clamp(24px,2.1vw,31px)/1.19 var(--serif);letter-spacing:-.048em;margin:0 0 15px}
+.audience-card>p{font-size:12px;line-height:1.79;color:#7a6f64;margin:0 0 28px}
+.audience-card-action{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:auto;padding-top:14px;border-top:1px solid #dcd0c4;font-size:11px;font-weight:700;color:#55483b}
+.audience-card-action::after{content:"";width:20px;height:1px;background:#9b8164;flex:0 0 20px;transition:width .25s,flex-basis .25s}
+.audience-card:hover .audience-card-action::after{width:30px;flex-basis:30px}
+
+/* Service modes — status is legible without decorative labels or fake pricing. */
+.choices-section{background:#fbf9f6}
+.solution-grid{align-items:stretch}
+.solution-card{min-height:233px;align-items:start;gap:15px;padding:26px 19px}
+.solution-card .solution-icon{align-self:start;margin-top:10px}
+.solution-card .solution-copy{display:flex;flex-direction:column;align-self:stretch;min-height:179px}
+.solution-copy .solution-tag{font-size:8px;line-height:1.4;letter-spacing:.11em}
+.solution-copy h3{font-size:25px;line-height:1.17;margin-bottom:13px}
+.solution-copy p{font-size:12px;line-height:1.75;margin:0 0 18px}
+.solution-availability{display:block;font-size:11px;font-weight:700;color:#6e5540;margin-top:auto}
+.solution-card .solution-card-marker{align-self:center}
+.services-clarifier{margin-top:25px;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:24px 26px;background:#f1e9df;border:1px solid #e2d8c9;border-radius:7px}
+.services-clarifier strong{font-size:15px}
+.services-clarifier p{font-size:12px;color:#817569;line-height:1.7;margin:5px 0 0}
+.services-clarifier .text-link{white-space:nowrap;flex-shrink:0}
+
+/* Digital Spaces & Digital Solutions: visual explanations of complementary offers. */
+.offerings-section{background:#ebe6df}
+.offerings-header{display:flex;align-items:end;justify-content:space-between;gap:45px;margin-bottom:43px}
+.offerings-header>p{max-width:398px;font-size:13px;line-height:1.9;color:#746b60;margin:0}
+.offerings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.offering-panel{background:#faf7f1;border:1px solid #ded5c8;border-radius:8px;overflow:hidden;padding:24px 28px 27px}
+.offering-head{display:flex;justify-content:space-between;align-items:center;color:#8b7762;font-size:9px;font-weight:700;letter-spacing:.16em;margin-bottom:18px}
+.offering-head span:first-child{font-size:11px;color:#6f5a45}
+.offering-visual{height:245px;position:relative;overflow:hidden;border-radius:4px;margin-bottom:26px;display:grid;place-items:center}
+.offering-visual-spaces{background:radial-gradient(circle at 70% 25%,#e9dacc,#d6c3af 64%,#c4ae97)}
+.offering-visual-spaces:before{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.45);border-radius:50%;top:-130px;right:-85px}
+.offering-screen{height:196px;width:min(75%,350px);background:#fbfaf7;border:5px solid rgba(250,248,243,.94);box-shadow:19px 25px 35px rgba(74,51,31,.18);transform:rotate(-5deg);position:relative;overflow:hidden;z-index:1}
+.offering-screen-top{height:24px;border-bottom:1px solid #e3dad0;display:flex;gap:5px;align-items:center;padding:0 11px;background:#fbf9f5}
+.offering-screen-top span{height:4px;width:4px;border-radius:50%;background:#c5b1a0}
+.offering-screen-content{padding:19px 27px;background:linear-gradient(130deg,#f8f5ee,#e5d6c4);height:calc(100% - 24px);display:flex;flex-direction:column;align-items:start}
+.offering-screen-content small{font-size:7px;letter-spacing:.19em;color:#8f7962}
+.offering-screen-content strong{font:400 29px/1.1 var(--serif);letter-spacing:-.05em;margin:20px 0 8px}
+.offering-screen-content i{width:45px;height:2px;background:#a68d72}
+.offering-visual-solutions{background:linear-gradient(130deg,#2e3230,#4e554d)}
+.offering-visual-solutions:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(245,234,218,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(245,234,218,.055) 1px,transparent 1px);background-size:26px 26px}
+.solution-flow{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;gap:0;width:min(90%,520px)}
+.flow-node{border:1px solid rgba(233,226,216,.55);color:#e5dfd5;padding:15px 11px;font-size:9px;font-weight:700;letter-spacing:.08em;white-space:nowrap;min-width:87px;text-align:center;background:rgba(40,41,38,.65)}
+.flow-node-main{border-color:#d1b89e;background:#e7d7c7;color:#2d2b26;box-shadow:0 5px 25px rgba(12,14,12,.2)}
+.flow-connector{width:39px;height:1px;flex:0 1 39px;min-width:10px;background:#c5b5a5}
+.offering-panel h3{font:400 clamp(26px,2.5vw,34px)/1.23 var(--serif);letter-spacing:-.047em;margin:0 0 12px}
+.offering-panel>p{font-size:13px;line-height:1.87;color:#796d61;margin:0 0 22px}
+.offering-examples{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:27px}
+.offering-examples span{font-size:10px;font-weight:600;color:#655646;border:1px solid #ddd1c3;padding:8px 10px;border-radius:3px;background:#f5eee7}
+.offering-link{display:inline-flex;align-items:center;gap:15px;font-size:12px;font-weight:700;padding:11px 0;border-bottom:1px solid #8d755d;color:#514536}
+.offering-link::after{content:"";width:20px;height:1px;background:currentColor;transition:width .23s}
+.offering-link:hover{color:#8b6c4c}
+.offering-link:hover::after{width:30px}
+.offerings-disclosure{font-size:11px;line-height:1.8;color:#817466;max-width:770px;margin:19px 0 0}
+
+/* About and FAQs: evidence over invented promises */
+.manifesto-section .manifesto-inner>p:not(.eyebrow){max-width:715px}
+.manifesto-secondary{font-size:13px!important;max-width:680px!important;color:#bcb4aa!important;margin-top:-12px!important;margin-bottom:28px!important}
+.faq-section{background:#f7f3ed}
+.faq-layout{display:grid;grid-template-columns:36% minmax(0,1fr);gap:9%;align-items:start}
+.faq-heading{position:sticky;top:132px}
+.faq-heading>p:not(.eyebrow){font-size:13px;line-height:1.85;color:#7e7468;max-width:330px;margin:20px 0 25px}
+.faq-heading .text-link{color:#685440}
+.faq-questions{min-width:0;border-top:1px solid #d6c9b9}
+.faq-questions details{border-bottom:1px solid #d6c9b9;padding:0}
+.faq-questions summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;cursor:pointer;padding:23px 0;font-size:14px;font-weight:700;line-height:1.5;color:#3e3832}
+.faq-questions summary::-webkit-details-marker{display:none}
+.faq-questions summary:hover{color:#8f7458}
+.faq-plus{width:21px;height:21px;position:relative;display:block;flex:0 0 21px;border:1px solid #bda992;border-radius:50%}
+.faq-plus:before,.faq-plus:after{content:"";position:absolute;background:#8a755c;top:9px;left:6px;width:8px;height:1px;transition:transform .2s}
+.faq-plus:after{transform:rotate(90deg)}
+.faq-questions details[open] .faq-plus:after{transform:rotate(0)}
+.faq-questions details>p{font-size:13px;line-height:1.9;color:#786e63;margin:-3px 0 24px;max-width:660px}
+
+/* Direct contact and a traceable handoff; no pretend backend form delivery. */
+.contact-copy>p:not(.eyebrow){font-size:15px}
+.contact-steps{margin:31px 0 25px;border-top:1px solid #d6c9ba}
+.contact-steps>div{display:grid;grid-template-columns:34px 1fr;align-items:start;gap:9px;border-bottom:1px solid #d6c9ba;padding:13px 0}
+.contact-steps strong{color:#a58a6d;font-size:10px;letter-spacing:.08em;padding-top:3px}
+.contact-steps span{font-size:12px;line-height:1.7;color:#706457}
+.contact-direct{display:flex;flex-direction:column;align-items:start;gap:6px}
+.contact-direct>span{font-size:10px;letter-spacing:.13em;font-weight:700;color:#9b856d;text-transform:uppercase}
+.contact-direct a{display:inline-block;font-size:17px;font-weight:700;border-bottom:1px solid #a88d70;padding-bottom:5px}
+.contact-direct a:hover{color:#846341}
+.contact-direct small{color:#8d8175;font-size:10px;line-height:1.6}
+.contact-form .form-heading{margin-bottom:26px}
+.contact-form .form-fineprint{font-size:10px;line-height:1.75}
+
+/* Footer is now a usable map of the business. */
+.footer-brand-block{max-width:440px}
+.footer-main .footer-brand-block>p{font-size:13px;max-width:375px;line-height:1.9;margin:21px 0 13px;color:#c6bcb0}
+.footer-email{font-size:12px;color:#e6d5c0;display:inline-block;border-bottom:1px solid #96846f;padding-bottom:5px}
+.footer-email:hover{color:#fff}
+.footer-main{gap:60px}
+.footer .footer-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:25px;row-gap:19px;min-width:500px;max-width:670px;font-size:12px;align-items:start}
+.footer .footer-links a{line-height:1.5}
+@media(max-width:1200px){
+  .audience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .audience-card{min-height:260px}
+  .audience-card h3{font-size:30px}
+  .desktop-nav{gap:16px}
+  .footer .footer-links{min-width:420px}
+}
+@media(max-width:960px){
+  .hero h1{font-size:clamp(44px,6.3vw,64px)}
+  .audience-intro,.offerings-header{display:block}
+  .audience-intro>p,.offerings-header>p{max-width:670px;margin-top:22px}
+  .offerings-grid{grid-template-columns:1fr}
+  .offering-panel{padding:25px}
+  .faq-layout{grid-template-columns:1fr;gap:25px}
+  .faq-heading{position:static}
+  .footer .footer-links{min-width:0;max-width:none;grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:740px){
+  .hero h1{font-size:clamp(42px,8vw,61px)}
+  .hero-buttons .button{min-width:0}
+  .solution-grid{grid-template-columns:1fr}
+  .solution-card{min-height:175px}
+  .solution-card .solution-copy{min-height:135px}
+  .services-clarifier{padding:21px}
+  .footer-main{display:block}
+  .footer .footer-links{margin-top:34px}
+}
+@media(max-width:640px){
+  .hero h1{font-size:clamp(39px,10vw,55px)}
+  .hero-description{font-size:14px}
+  .hero-footer>span:last-child{display:none}
+  .audience-intro h2,.offerings-header h2,.faq-heading h2{font-size:37px}
+  .audience-grid{grid-template-columns:1fr;gap:10px}
+  .audience-card{min-height:208px;padding:22px}
+  .audience-index{padding-bottom:17px}
+  .audience-card h3{font-size:29px}
+  .audience-card>p{margin-bottom:18px}
+  .solution-card{min-height:190px;padding:20px 15px}
+  .solution-card .solution-icon{width:41px;flex-basis:41px}
+  .solution-card .solution-icon svg{width:40px;height:40px}
+  .solution-card .solution-copy{min-height:142px}
+  .solution-copy h3{font-size:23px}
+  .services-clarifier{display:block}
+  .services-clarifier .text-link{margin-top:18px}
+  .offering-panel{padding:17px}
+  .offering-visual{height:195px}
+  .offering-screen{height:160px}
+  .offering-screen-content{padding:12px 18px}
+  .offering-screen-content strong{font-size:24px;margin:13px 0 7px}
+  .offering-panel h3{font-size:29px}
+  .flow-node{font-size:8px;padding:12px 7px;min-width:76px}
+  .flow-connector{width:14px;flex-basis:14px;min-width:8px}
+  .faq-questions summary{font-size:13px;padding:19px 0}
+  .faq-questions details>p{font-size:12px}
+  .manifesto-secondary{font-size:12px!important;margin-top:-5px!important}
+  .contact-copy>p:not(.eyebrow){font-size:14px}
+  .footer-main{display:block}
+  .footer .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:18px}
+  .footer-brand-block{max-width:none}
+}
+@media(prefers-reduced-motion:reduce){.audience-card,.audience-card-action::after,.offering-link::after,.faq-plus:before,.faq-plus:after{transition:none}}
