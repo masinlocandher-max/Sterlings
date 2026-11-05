@@ -157,3 +157,37 @@
     });
   }
 })();
+// Certificate of Inheritance: the visitor types a name, the certificate fills in,
+// and "Claim your website" carries the name into the contact form.
+(() => {
+  const form = document.getElementById('heir-form');
+  const input = document.getElementById('heir-name');
+  const nameEl = document.getElementById('cert-name');
+  const domainEl = document.getElementById('cert-domain');
+  if (!form || !input || !nameEl || !domainEl) return;
+  const toDomain = value => {
+    const slug = value.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 24);
+    return (slug || 'yourname') + '.com';
+  };
+  const update = () => {
+    const value = input.value.trim().replace(/\s+/g, ' ');
+    nameEl.textContent = value || 'Your Name';
+    domainEl.textContent = toDomain(value);
+    nameEl.classList.toggle('is-filled', Boolean(value));
+  };
+  input.addEventListener('input', update);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const value = input.value.trim();
+    const nameField = document.getElementById('inquiry-name');
+    const messageField = document.getElementById('inquiry-message');
+    if (nameField && value) nameField.value = value;
+    if (messageField && value && !messageField.value.trim()) {
+      messageField.value = 'I’d like to claim my website, ' + toDomain(value) + ' (or something close to it).';
+    }
+    const contact = document.getElementById('contact');
+    if (contact) contact.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    const next = document.getElementById(value ? 'inquiry-email' : 'inquiry-name');
+    if (next) setTimeout(() => next.focus({ preventScroll: true }), 500);
+  });
+})();

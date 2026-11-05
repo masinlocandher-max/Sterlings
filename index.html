@@ -231,7 +231,43 @@
       </div>
     </section>
 
-    <section class="manifesto-section" id="about"><div class="container manifesto-inner reveal"><p class="eyebrow">ABOUT THE NAME</p><h2>Yes, Veronica and Lucas Sterling<br><em>are the heirs, just as they claim.</em></h2><p>In the movies, the Sterlings always get the mansion, the company, and the dramatic music. We can’t give you the mansion. But you can claim something that’s just as much yours: a place online, with your name on it.</p><a class="button button-light" href="#contact">Claim your website </a><div class="manifesto-foot"><span>NO DNA TEST NEEDED.</span><span>NO SECRET TWIN.</span><span>NO DRAMATIC WILL READING.</span></div></div></section>
+    <section class="manifesto-section heir-section" id="about">
+      <div class="container heir-grid">
+        <div class="heir-copy reveal">
+          <p class="eyebrow">ABOUT THE NAME</p>
+          <h2>Yes, Veronica and Lucas Sterling <em>are the heirs, just as they claim.</em></h2>
+          <p>In the movies, the Sterlings always get the mansion, the company, and the dramatic music. We can’t give you the mansion. But you can claim something that’s just as much yours: a place online, with your name on it.</p>
+          <form class="heir-try" id="heir-form" autocomplete="off">
+            <label for="heir-name">Try it. Type your name.</label>
+            <div class="heir-try-row">
+              <input id="heir-name" name="heir-name" maxlength="40" placeholder="Your name" autocomplete="name">
+              <button class="button button-light" type="submit">Claim your website </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="heir-stage reveal" aria-live="polite">
+          <article class="certificate" aria-label="Certificate of Inheritance">
+            <div class="certificate-inner">
+              <p class="certificate-kicker">THE STERLINGS</p>
+              <h3 class="certificate-title">Certificate of Inheritance</h3>
+              <p class="certificate-line">This certifies that</p>
+              <p class="certificate-name" id="cert-name">Your Name</p>
+              <p class="certificate-line">is the rightful heir to</p>
+              <p class="certificate-domain" id="cert-domain">yourname.com</p>
+              <p class="certificate-line certificate-line-last">and all the compliments that come with it.</p>
+              <div class="certificate-signs">
+                <div><span class="certificate-sign">Veronica Sterling</span><small>Heir</small></div>
+                <div class="certificate-seal" aria-hidden="true"><img src="logo-symbol.svg" alt=""></div>
+                <div><span class="certificate-sign">Lucas Sterling</span><small>Also heir</small></div>
+              </div>
+            </div>
+          </article>
+          <p class="certificate-fine">Not a legal document. Your website name is just an example until we check it’s available.</p>
+        </div>
+      </div>
+      <div class="container"><div class="manifesto-foot"><span>NO DNA TEST NEEDED.</span><span>NO SECRET TWIN.</span><span>NO DRAMATIC WILL READING.</span></div></div>
+    </section>
 
     <section class="contact-section section-pad" id="contact">
       <div class="container contact-grid">
