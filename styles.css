@@ -100,3 +100,8 @@
   .teaser-floating-caption{font-size:7px;bottom:11px;right:3px;padding:10px}
   .mobile-nav-scroll{padding:28px 22px 38px}
 }
+
+/* Miniature website-editor device icons are SVGs, not font glyphs */
+.device-icons svg{width:14px;height:14px;display:block}
+.device-icons span{display:flex;align-items:center;justify-content:center;min-width:17px;min-height:19px}
+@media(max-width:640px){.device-icons svg{width:11px;height:11px}.device-icons span{min-width:12px;min-height:14px}}
