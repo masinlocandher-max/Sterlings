@@ -47,6 +47,12 @@ The homepage `#solutions` section presents two service models. They replace the 
 - **Define the Concierge "monthly update allowance"** (hours or number of changes) before selling it.
 - Plan anchors: `#studio-plan`, `#concierge-plan`, `#compare`. The inquiry form options are `Sterling Studio (self-service)` and `Sterling Concierge (managed)`; plan buttons and Showroom links preselect them.
 
+## Voice and wording
+
+- **Plain words only.** Write for someone who isn't good with computers: "website" (not "digital space"), "put it online" (not "publish"), "download" (not "export HTML"), "your website address, like yourname.com" (not "domain").
+- **The name joke lives in one place:** the "About the name" section (`#about`): *Yes, Veronica and Lucas Sterling are the heirs, just as they claim.* Elsewhere it appears only as a quiet echo ("Claim your website", "Claim yours"). Keep it dry and deadpan; don't add it to every heading.
+- Grammar: one person is "Veronica Sterling"; the family is "the Sterlings".
+
 ## Delivered features
 
 - index.html: responsive corporate website based on the supplied Sterlings homepage concept, with solutions, service positioning, process, studio explanation, and inquiry form.

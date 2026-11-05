@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5efe6">
-  <meta name="description" content="A hands-on website studio from The Sterlings. Customize a layout, preview your design, and export an HTML website.">
+  <meta name="description" content="Make your own website with The Sterlings. Pick a design, type in your details, and watch it come together.">
   <title>THE STERLINGS — Your Studio</title>
   <link rel="icon" href="logo-symbol.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,33 +16,33 @@
   <header class="studio-header">
     <a class="brand studio-brand" href="index.html" aria-label="The Sterlings home"><span class="brand-symbol" aria-hidden="true"><img src="logo-symbol.svg" alt=""></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a>
     <span class="studio-header-separator"></span>
-    <div class="studio-header-name"><strong>Your Studio</strong><span class="save-indicator" id="save-status" aria-live="polite">Browser draft</span></div>
+    <div class="studio-header-name"><strong>Your Studio</strong><span class="save-indicator" id="save-status" aria-live="polite">Saved on this device</span></div>
     <div class="studio-top-actions">
       <a class="studio-showroom-link" href="showroom.html">Showroom</a>
       <div class="history-buttons"><button type="button" id="undo-button" title="Undo last change" aria-label="Undo">↶</button><button type="button" id="redo-button" title="Redo last change" aria-label="Redo">↷</button></div>
       <div class="viewport-buttons" role="group" aria-label="Preview screen width"><button type="button" id="desktop-button" class="is-active" aria-pressed="true"><span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="12" rx="1.8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h8M12 16.5v3.5" stroke="currentColor" stroke-width="1.5"/></svg></span> Desktop</button><button type="button" id="mobile-button" aria-pressed="false"><span aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 18.5h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span> Mobile</button></div>
       <button type="button" class="button button-outline studio-preview-button" id="preview-button">Preview</button>
-      <button type="button" class="button button-dark studio-export-button" id="export-button">Export HTML</button>
+      <button type="button" class="button button-dark studio-export-button" id="export-button">Download</button>
     </div>
   </header>
   <main class="studio-layout" id="studio-editor">
     <aside class="studio-left">
-      <div class="side-label">YOUR WORKSPACE</div>
+      <div class="side-label">YOUR WEBSITE</div>
       <div class="side-group"><h2>Pages</h2><button class="side-page is-selected" type="button" data-preview-section="home"><span class="page-icon" aria-hidden="true"></span> Home</button><button class="side-page" type="button" data-preview-section="about"><span class="page-icon" aria-hidden="true"></span> About</button><button class="side-page" type="button" data-preview-section="services"><span class="page-icon" aria-hidden="true"></span> Services</button><button class="side-page" type="button" data-preview-section="contact"><span class="page-icon" aria-hidden="true"></span> Contact</button></div>
       <div class="side-divider"></div>
-      <div class="side-group"><h2>Starting points</h2><button type="button" class="side-template is-selected" data-template="studio"><span class="template-dot"></span> Creative studio</button><button type="button" class="side-template" data-template="portfolio"><span class="template-dot"></span> Personal portfolio</button><button type="button" class="side-template" data-template="business"><span class="template-dot"></span> Local business</button></div>
-      <div class="sidebar-help"><span class="help-mark" aria-hidden="true"></span><strong>Made to make it yours.</strong><p>Changes save in this browser. Export your design whenever you're ready.</p></div>
+      <div class="side-group"><h2>Pick a design</h2><button type="button" class="side-template is-selected" data-template="studio"><span class="template-dot"></span> Creative studio</button><button type="button" class="side-template" data-template="portfolio"><span class="template-dot"></span> Personal portfolio</button><button type="button" class="side-template" data-template="business"><span class="template-dot"></span> Local business</button></div>
+      <div class="sidebar-help"><span class="help-mark" aria-hidden="true"></span><strong>Made to make it yours.</strong><p>Your changes are saved on this device. Download a copy whenever you’re ready.</p></div>
       <div class="studio-sidebar-links"><a class="back-to-site" href="index.html">Back to The Sterlings</a><a class="back-to-site" href="showroom.html">Explore the Showroom</a></div>
     </aside>
     <section class="studio-workspace" aria-label="Website preview">
-      <div class="canvas-toolbar"><span class="canvas-toolbar-dot"></span> <span id="preview-site-label">Your website</span><span class="canvas-toolbar-right">LIVE PREVIEW <span class="live-dot"></span></span></div>
+      <div class="canvas-toolbar"><span class="canvas-toolbar-dot"></span> <span id="preview-site-label">Your website</span><span class="canvas-toolbar-right">PREVIEW <span class="live-dot"></span></span></div>
       <div class="preview-outer" id="preview-outer"><iframe title="Live preview of your website design" id="site-preview" sandbox="allow-same-origin"></iframe></div>
-      <div class="workspace-foot"><span>Preview only • Downloaded HTML works independently of The Sterlings Studio.</span><button type="button" id="reset-button">Reset draft</button></div>
+      <div class="workspace-foot"><span>This is a preview. The copy you download works on its own.</span><button type="button" id="reset-button">Start over</button></div>
     </section>
     <aside class="studio-inspector">
       <div class="inspector-head"><div><p class="side-label">MAKE IT YOURS</p><h2>Edit your website</h2></div><span class="inspector-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 21 12 12 21 3 12Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></span></div>
       <form id="studio-form" autocomplete="off">
-        <fieldset><legend>Identity & headline</legend>
+        <fieldset><legend>Name and headline</legend>
           <label for="site-name">Website name</label><input id="site-name" name="siteName" maxlength="70" value="Aurora Studio">
           <label for="site-headline">Main heading</label><textarea id="site-headline" name="headline" rows="2" maxlength="125">Good work deserves a place of its own.</textarea>
           <label for="site-tagline">Short description</label><textarea id="site-tagline" name="tagline" rows="2" maxlength="230">Independent design and thoughtful collaboration.</textarea>
@@ -56,14 +56,14 @@ Digital experiences</textarea>
         </fieldset>
         <fieldset><legend>Color & imagery</legend>
           <label for="site-accent">Accent color</label><div class="color-field"><input id="site-accent" name="accent" type="color" value="#8a7a67"><span id="accent-label">#8A7A67</span></div>
-          <label for="site-photo">Hero image URL <span class="field-hint">Optional (HTTPS)</span></label><input id="site-photo" name="photo" type="url" placeholder="https://example.com/your-photo.jpg" maxlength="500">
-          <p class="field-note">For downloaded pages, images load from their original website. Use a permanent URL you control.</p>
+          <label for="site-photo">Main photo link <span class="field-hint">Optional, starts with https://</span></label><input id="site-photo" name="photo" type="url" placeholder="https://example.com/your-photo.jpg" maxlength="500">
+          <p class="field-note">Paste a link to a photo that’s already online. Use a link that won’t change, like one from your own website.</p>
         </fieldset>
         <fieldset><legend>Contact information</legend>
-          <label for="site-email">Public contact email</label><input id="site-email" name="email" type="email" placeholder="hello@example.com" maxlength="254">
-          <label for="site-location">Location or service area</label><input id="site-location" name="location" maxlength="100" placeholder="Based in the Philippines">
+          <label for="site-email">Email people can reach you at</label><input id="site-email" name="email" type="email" placeholder="hello@example.com" maxlength="254">
+          <label for="site-location">Where you are, or the areas you serve</label><input id="site-location" name="location" maxlength="100" placeholder="Based in the Philippines">
         </fieldset>
-        <div class="inspector-actions"><button class="button button-dark button-full" type="button" id="request-launch">Ask about publishing</button><p>Exporting creates a standalone website. Publishing and custom domains require separate hosting.</p></div>
+        <div class="inspector-actions"><button class="button button-dark button-full" type="button" id="request-launch">Ask us to put it online</button><p>Downloading gives you a copy of your website. Putting it online with your own address (like yourname.com) is a separate service we can help with.</p></div>
       </form>
     </aside>
   </main>

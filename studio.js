@@ -84,8 +84,8 @@
   }
   function updateHistoryButtons(){undoButton.disabled=past.length===0;redoButton.disabled=future.length===0;}
   function save(){
-    try {localStorage.setItem(STORE_KEY,snapshot());if(saveStatus)saveStatus.textContent='Draft saved in this browser';}
-    catch {if(saveStatus)saveStatus.textContent='Storage unavailable • export to keep your work';}
+    try {localStorage.setItem(STORE_KEY,snapshot());if(saveStatus)saveStatus.textContent='Saved on this device';}
+    catch {if(saveStatus)saveStatus.textContent='Can’t save here. Download a copy to keep your work.';}
   }
   function getDocument(){
     const name=esc(state.siteName.trim() || 'Your Studio');
@@ -204,17 +204,17 @@
     anchor.href=link;anchor.download=(state.siteName.trim()||'my-website').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,60)+'.html';
     document.body.append(anchor);anchor.click();anchor.remove();
     setTimeout(()=>URL.revokeObjectURL(link),1500);
-    toast('Website HTML downloaded. Hosting is not included with export.');
+    toast('Your website was downloaded. It isn’t online yet. Ask us if you’d like help with that.');
   });
   document.getElementById('request-launch').addEventListener('click',()=>{
     const subject='Website publishing inquiry — '+(state.siteName||'My Website').slice(0,70);
-    const body='Hello The Sterlings,\n\nI built a website draft using The Sterlings Studio and would like to ask about publishing or managed hosting.\n\nWebsite name: '+state.siteName+'\nWebsite type: '+template+'\nHeadline: '+state.headline.slice(0,130)+'\nServices: '+state.services.slice(0,240).replace(/\n/g,', ')+'\n\nPlease share the available options and requirements.\n\nThank you.';
+    const body='Hello The Sterlings,\n\nI built a website draft using The Sterlings Studio and would like help putting it online.\n\nWebsite name: '+state.siteName+'\nWebsite type: '+template+'\nHeadline: '+state.headline.slice(0,130)+'\nServices: '+state.services.slice(0,240).replace(/\n/g,', ')+'\n\nPlease share the available options and requirements.\n\nThank you.';
     window.location.href='mailto:'+inquiryInbox+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
     toast('Your email app should open. Review the message and send it there.');
   });
   document.getElementById('reset-button').addEventListener('click',()=>{
     if(!window.confirm('Reset this draft to its original layout? You can undo the reset.'))return;
-    pushHistory(snapshot(),true);state={...templates[template]};setFields();render();save();toast('Draft reset.');
+    pushHistory(snapshot(),true);state={...templates[template]};setFields();render();save();toast('Started over.');
   });
   document.querySelectorAll('[data-preview-section]').forEach(button=>button.addEventListener('click',()=>{
     document.querySelectorAll('[data-preview-section]').forEach(item=>item.classList.toggle('is-selected',item===button));
@@ -228,6 +228,6 @@
       const data=JSON.parse(saved);
       if(data && data.state)restore(saved);else{setFields();render();}
     } else {setFields();render();save();}
-  }catch{setFields();render();if(saveStatus)saveStatus.textContent='Storage unavailable — export your work';}
+  }catch{setFields();render();if(saveStatus)saveStatus.textContent='Can’t save here. Download a copy to keep your work.';}
   updateHistoryButtons();
 })();

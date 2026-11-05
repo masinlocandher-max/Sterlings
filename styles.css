@@ -193,3 +193,6 @@
 .grow-list .grow-upgrade{background:var(--ink);border-color:var(--ink);color:#fff}
 @media(max-width:920px){.plans,.grow{grid-template-columns:1fr}.plans{max-width:640px}.grow{gap:24px}.compare,.grow{max-width:640px}}
 @media(max-width:640px){.plan,.grow{padding:28px 22px}.plan-price{font-size:44px}.compare table{font-size:13px}.compare th,.compare td{padding:13px 6px}.compare thead th{font-size:18px}.compare tbody th{width:38%}.compare{margin-top:60px}}
+/* "About the name" joke: longer headline, so keep each half on one line where it fits */
+.manifesto-section h2{text-wrap:balance}
+@media (min-width:921px){.manifesto-section h2{font-size:clamp(42px,4.4vw,62px)}}

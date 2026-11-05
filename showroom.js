@@ -2,10 +2,10 @@
 (() => {
   'use strict';
   const concepts = {
-    atelier: { title:'Morrow Atelier', description:'Experimental creative studio / Neon and brutalist typography' },
-    residence: { title:'Casa Solenne', description:'Coastal retreat / Tropical photography and playful color' },
-    business: { title:'Northline Partners', description:'Business advisory / Data-led modernist design' },
-    portfolio: { title:'Isla Frames', description:'Photography portfolio / Cinematic gallery and lightbox' }
+    atelier: { title:'Morrow Atelier', description:'A bold design studio, with loud colors and big letters' },
+    residence: { title:'Casa Solenne', description:'A beach resort, with bright colors and lots of photos' },
+    business: { title:'Northline Partners', description:'A business advisor, clean and serious' },
+    portfolio: { title:'Isla Frames', description:'A photographer, with big photos you can tap to see up close' }
   };
   const selector = [...document.querySelectorAll('[data-concept]')];
   const devices = [...document.querySelectorAll('[data-device]')];

@@ -107,17 +107,17 @@
   } else reveals.forEach(el => el.classList.add('visible'));
   const serviceField = document.getElementById('inquiry-service');
   const conceptNames = {
-    atelier: 'Morrow Atelier — creative practice',
-    residence: 'Casa Solenne — hospitality',
-    business: 'Northline Partners — professional services',
-    portfolio: 'Isla Frames — personal portfolio'
+    atelier: 'Morrow Atelier (the design studio)',
+    residence: 'Casa Solenne (the beach resort)',
+    business: 'Northline Partners (the business advisor)',
+    portfolio: 'Isla Frames (the photographer)'
   };
   const showroomChoice = new URLSearchParams(window.location.search).get('showroom');
   if (showroomChoice && Object.prototype.hasOwnProperty.call(conceptNames, showroomChoice)) {
     const messageField = document.getElementById('inquiry-message');
-    if (serviceField) serviceField.value = 'Sterling Concierge (managed)';
+    if (serviceField) serviceField.value = 'Make it for me (Sterling Concierge)';
     if (messageField && !messageField.value.trim()) {
-      messageField.value = 'I would like to discuss a website inspired by the ' + conceptNames[showroomChoice] + ' concept in The Sterlings Showroom. Please share the options for customizing a similar direction for my business.';
+      messageField.value = 'I saw the ' + conceptNames[showroomChoice] + ' sample in The Sterlings Showroom. Could you make something like it for me?';
     }
   }
 
@@ -139,7 +139,7 @@
       const body = 'Hello The Sterlings,\n\nI would like to inquire about ' + service + '.\n\nName: ' + name + '\nReply-to email: ' + from + '\n\nAbout my project:\n' + message + '\n\nThank you.';
       const url = 'mailto:' + emailForInquiries + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       window.location.href = url;
-      status.textContent = 'Your email app should open with your inquiry. Review it and press Send there. If nothing opens, use the Copy inquiry button below.';
+      status.textContent = 'Your email app should open with your message. Check it, then press Send. If nothing opens, use the Copy button below.';
       let copy = document.getElementById('copy-inquiry');
       if (!copy) {
         copy = document.createElement('button');
@@ -149,10 +149,10 @@
         copy.style.marginTop = '12px';
         status.insertAdjacentElement('afterend',copy);
       }
-      copy.textContent = 'Copy inquiry details';
+      copy.textContent = 'Copy my message';
       copy.onclick = async () => {
-        try { await navigator.clipboard.writeText('To: ' + emailForInquiries + '\nSubject: ' + subject + '\n\n' + body);copy.textContent='Copied — paste into your email'; }
-        catch { copy.textContent = 'Please copy the details from your email draft'; }
+        try { await navigator.clipboard.writeText('To: ' + emailForInquiries + '\nSubject: ' + subject + '\n\n' + body);copy.textContent='Copied. Paste it into an email to us'; }
+        catch { copy.textContent = 'Please copy the message from your email app'; }
       };
     });
   }
