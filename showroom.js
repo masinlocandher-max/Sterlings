@@ -2,10 +2,10 @@
 (() => {
   'use strict';
   const concepts = {
-    atelier: { title:'Morrow Atelier', description:'An editorial creative practice' },
-    residence: { title:'Casa Solenne', description:'An intimate hospitality escape' },
-    business: { title:'Northline Partners', description:'A confident professional presence' },
-    portfolio: { title:'Isla Frames', description:'A photographic storytelling portfolio' }
+    atelier: { title:'Morrow Atelier', description:'Experimental creative studio / Neon and brutalist typography' },
+    residence: { title:'Casa Solenne', description:'Coastal retreat / Tropical photography and playful color' },
+    business: { title:'Northline Partners', description:'Business advisory / Data-led modernist design' },
+    portfolio: { title:'Isla Frames', description:'Photography portfolio / Cinematic gallery and lightbox' }
   };
   const selector = [...document.querySelectorAll('[data-concept]')];
   const devices = [...document.querySelectorAll('[data-device]')];
@@ -20,7 +20,8 @@
   function chooseConcept(id, push = true) {
     if (!Object.prototype.hasOwnProperty.call(concepts,id)) return;
     const concept = concepts[id];
-    const page = 'showroom-preview.html?space=' + encodeURIComponent(id);
+    const pages = {atelier:'demos/morrow.html',residence:'demos/casa.html',business:'demos/northline.html',portfolio:'demos/isla.html'};
+    const page = pages[id];
     title.textContent = concept.title;
     if (description) description.textContent=concept.description;
     frame.title = concept.title + ' concept website preview';
