@@ -1,4 +1,22 @@
 # THE STERLINGS
+
+## November 6, 2026: digital presence positioning and visitor clarity
+
+The corporate homepage is now structured around a plain-language offer:
+
+**The Sterlings helps individuals, first-time portfolio creators, freelancers, professionals, small business owners and organizations establish a digital presence through digital spaces and practical digital solutions.**
+
+Changes:
+- New first-fold message: "Build your digital presence" plus audience-specific examples and direct links to the Studio or inquiry.
+- "Who we help" section: four visitor pathways with preselected contact inquiry types.
+- Three service modes: self-service Studio (browser-based HTML export today); website rental (inquiry / quote only); managed websites (individually scoped and quoted).
+- Dedicated explanation of digital spaces (sites/portfolios/presentations) and digital solutions (useful features such as inquiries/catalogs/appointment requests, subject to feasibility and agreement).
+- Updated process, plain-language FAQ, visible current business contact email and detailed inquiry handoff disclaimer.
+- Public privacy.html with accurate operational details about email handoff, local browser drafts, external assets and absent checkout.
+- Unified main-site and Showroom menus; no decorative emoji or upward-arrow CTA glyphs.
+
+Commercial truth: the public site does not support payment, customer accounts, automatic rental subscription or one-click publishing. The Studio currently supports preview, draft storage in the browser and HTML export. No service pricing or domain ownership terms have been invented. Named staff, company registration evidence, real case studies and final customer contracts remain unpublished until independently confirmed.
+
 **Digital Spaces, Thoughtfully Made.**  
 *A place online, built around you.*
 
