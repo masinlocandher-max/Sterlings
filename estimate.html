@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5efe6">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Plan a website around your needs. Explore pages, design, features and support with an itemized website estimate from The Sterlings.">
+  <title>Estimate Your Website | THE STERLINGS</title>
+  <link rel="icon" href="logo-symbol.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="estimate.css">
+  <script src="site.js" defer></script>
+  <script src="estimate-pricing.js" defer></script>
+  <script src="estimate-model.js" defer></script>
+  <script src="estimate.js" defer></script>
+</head>
+<body class="estimate-page">
+  <a class="skip-link" href="#main">Skip to website estimator</a>
+  <header class="site-header" id="top">
+    <div class="nav-shell container">
+      <a class="brand" href="index.html" aria-label="The Sterlings home">
+        <span class="brand-symbol" aria-hidden="true"><img src="logo-symbol.svg" alt=""></span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="nav-dropdown" data-nav-dropdown>
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="solutions-dropdown">Solutions <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="nav-dropdown-panel" id="solutions-dropdown" hidden>
+            <p class="dropdown-heading">WAYS TO WORK WITH US</p>
+            <a href="index.html#digital-spaces"><span>Digital spaces</span><small>Websites, portfolios and online showcases</small></a>
+            <a href="index.html#digital-solutions"><span>Digital solutions</span><small>Useful features for people and businesses</small></a>
+            <a href="studio.html"><span>Website Studio</span><small>Customize, preview and export HTML</small></a>
+            <a href="index.html#solutions"><span>Service options</span><small>Studio, rental inquiries and custom projects</small></a>
+            <a href="index.html?service=Website%20rental#contact"><span>Website rental</span><small>Discuss terms and request a quotation</small></a>
+          </div>
+        </div>
+        <a href="index.html#who-we-help">Who we help</a>
+        <a href="showroom.html" aria-current="page">Showroom</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="nav-signin" href="studio.html">Try the Studio</a>
+        <a class="button button-dark button-small" href="estimate.html">Estimate my website</a>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-navigation"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-navigation" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <div class="mobile-nav-scroll">
+        <p class="mobile-nav-eyebrow">DISCOVER THE STERLINGS</p>
+        <a class="mobile-nav-feature" href="index.html#who-we-help"><span><strong>Who we help</strong><small>For portfolios, professionals and small businesses</small></span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="index.html#digital-spaces"><span>Digital spaces</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="index.html#digital-solutions"><span>Digital solutions</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="index.html#solutions"><span>Service options</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="studio.html"><span>Website Studio</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="showroom.html"><span>Showroom</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="index.html#how-it-works"><span>How it works</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <a href="index.html#about"><span>About us</span><span class="mobile-link-arrow" aria-hidden="true"></span></a>
+        <div class="mobile-nav-actions">
+          <a class="mobile-nav-primary" href="estimate.html">Estimate my website <span>Explore your scope and budget</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="menu-backdrop" hidden aria-hidden="true"></div>
+  <main id="main">
+    <div class="pricing-preview" id="pricing-preview"><div class="container"><strong>Pricing preview</strong><span>Proposed rates for review. These estimates are not published offers or final quotations.</span></div></div>
+    <section class="estimate-intro container" aria-labelledby="estimate-heading">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR WEBSITE, YOUR STARTING POINT</p>
+        <h1 id="estimate-heading">A little clarity.<br><em>A better beginning.</em></h1>
+      </div>
+      <div class="estimate-intro-copy"><p>What would your website need? Choose what matters to you and see how each choice shapes your budget.</p><div class="estimate-promises"><span>No sign-up</span><span>Itemized costs</span><span>No commitment</span></div></div>
+    </section>
+    <noscript><div class="container estimate-notice">This calculator needs JavaScript. You can still <a href="index.html#contact">tell us about your website</a> to request a quotation.</div></noscript>
+    <div id="estimate-load-error" class="container estimate-notice" hidden>The calculator could not load. Please reload, or <a href="index.html#contact">request a quotation directly</a>.</div>
+    <div class="container estimator-layout" id="estimator" hidden>
+      <form id="estimate-form" class="estimate-form" aria-label="Choose your website needs">
+        <section class="estimate-section" aria-labelledby="purpose-title">
+          <div class="estimate-section-heading"><span class="section-number">01</span><div><p class="eyebrow">THE STARTING POINT</p><h2 id="purpose-title">What are you creating?</h2></div></div>
+          <fieldset><legend class="visually-hidden">Website type</legend><div id="type-options" class="choice-grid type-options"></div></fieldset>
+          <p class="field-note">Your starting point suggests a page count. You can adjust it below.</p>
+          <fieldset class="service-fieldset"><legend>How would you like to get there?</legend><div id="service-options" class="choice-grid"></div></fieldset>
+          <div class="studio-alternative"><span>Prefer to build it yourself?</span><a href="studio.html">Try the Website Studio</a><small>Customize and export HTML. Hosting and publishing are separate.</small></div>
+        </section>
+        <section class="estimate-section" aria-labelledby="scope-title">
+          <div class="estimate-section-heading"><span class="section-number">02</span><div><p class="eyebrow">THE SHAPE OF YOUR SITE</p><h2 id="scope-title">Make room for your story.</h2></div></div>
+          <div class="field-pair">
+            <div><label class="field-label" for="pages">How many pages?</label><select id="pages" name="pages" aria-describedby="pages-help"></select><p id="pages-help" class="field-note">Home, About, Services and Contact each count as a page.</p></div>
+            <div><label class="field-label" for="content">Words and images</label><select id="content" name="content"></select><p class="field-note">Copy help is priced per page. Photography and image licensing are separate.</p></div>
+          </div>
+          <fieldset><legend>Your design direction</legend><div id="design-options" class="choice-grid"></div></fieldset>
+        </section>
+        <section class="estimate-section" aria-labelledby="features-title">
+          <div class="estimate-section-heading"><span class="section-number">03</span><div><p class="eyebrow">MORE THAN A GOOD FIRST IMPRESSION</p><h2 id="features-title">What should your website do?</h2></div></div>
+          <p class="section-description">Contact links, a mobile-friendly layout and basic page titles are part of the starting scope. Add only what you need.</p>
+          <fieldset><legend class="visually-hidden">Optional website features</legend><div id="feature-options" class="choice-grid feature-options"></div></fieldset>
+          <p class="field-note">Integration prices cover setup, not third-party subscriptions. Custom features need a separate scope review.</p>
+        </section>
+        <section class="estimate-section" aria-labelledby="support-title">
+          <div class="estimate-section-heading"><span class="section-number">04</span><div><p class="eyebrow">THINKING AHEAD</p><h2 id="support-title">The details after design.</h2></div></div>
+          <div id="care-field"><label class="field-label" for="care">Ongoing support</label><select id="care" name="care"></select><p class="field-note">Technical care and content updates are different levels of support. Exact limits are agreed in the quotation.</p></div>
+          <p class="rental-care" id="rental-care" hidden>Routine technical care is allowed for in the proposed rental range. Rental terms, hosting limits, content updates and ownership are confirmed in your quotation.</p>
+          <div class="field-pair">
+            <div><label class="field-label" for="domain">Your domain name</label><select id="domain" name="domain"></select><p class="field-note">Registration and renewal are quoted separately.</p></div>
+            <div><label class="field-label" for="timeline">When do you want to launch?</label><select id="timeline" name="timeline"></select><p class="field-note">A preference, not a confirmed delivery date.</p></div>
+          </div>
+          <div class="choice-actions"><button type="button" id="reset-estimate">Start again</button><button type="button" id="save-choices">Save choices on this device</button></div>
+          <p id="save-status" class="field-note" role="status" aria-live="polite">Your choices stay in this tab unless you choose to save them.</p>
+        </section>
+      </form>
+      <aside class="estimate-sidebar" aria-labelledby="summary-title">
+        <div class="estimate-summary" id="estimate-summary">
+          <div class="summary-top"><span class="summary-dot" aria-hidden="true"></span><p class="eyebrow" id="summary-status">YOUR INDICATIVE ESTIMATE</p></div>
+          <h2 id="summary-title">Your website,<br><em>taking shape.</em></h2>
+          <p id="summary-scope" class="summary-scope"></p>
+          <div class="summary-price"><span id="setup-label">One-time setup</span><strong id="setup-total"></strong><span id="monthly-label">Ongoing monthly</span><strong class="monthly-total" id="monthly-total"></strong><small id="monthly-note"></small></div>
+          <div class="summary-year"><span>First 12 months</span><strong id="year-total"></strong><small>Setup + 12 monthly payments. An illustration, not a contract term.</small></div>
+          <div class="custom-notice" id="custom-notice" hidden><strong>Some work needs a separate quote.</strong><p>Totals cover the priced portion only. Additional costs are not included:</p><ul id="custom-list"></ul></div>
+          <details class="cost-details" open><summary>See the breakdown</summary><ul id="cost-breakdown"></ul></details>
+          <p class="summary-exclusions">Domain fees, third-party services and any applicable taxes are excluded. Final scope and availability need review.</p>
+          <a class="button button-dark" href="#request-quote">Review &amp; request a quotation</a>
+          <div class="summary-tools"><button type="button" id="print-estimate">Print / save PDF</button><button type="button" id="download-estimate">Download summary</button></div>
+          <button class="share-choices" type="button" id="share-estimate">Copy a link to these choices</button>
+          <p id="estimate-action-status" class="field-note" role="status" aria-live="polite"></p>
+          <span class="summary-footnote" id="rate-version"></span>
+        </div>
+      </aside>
+    </div>
+    <div id="estimate-announcement" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+    <section class="container estimate-basis" id="estimate-basis" hidden aria-labelledby="basis-title"><div><p class="eyebrow">THE SMALL PRINT, IN PLAIN LANGUAGE</p><h2 id="basis-title">Know what is included.</h2></div><div><h3>Basis of your estimate</h3><ul id="assumption-list"></ul></div><div><h3>Separate costs &amp; decisions</h3><ul id="exclusion-list"></ul></div></section>
+    <section class="quote-section" id="request-quote" aria-labelledby="request-title" hidden>
+      <div class="container quote-layout">
+        <div class="quote-copy"><p class="eyebrow">LET’S GIVE YOUR IDEA A DIRECTION</p><h2 id="request-title">From an estimate<br><em>to your next step.</em></h2><p>Send us your choices. We’ll review the scope, confirm what can be delivered and prepare a formal quotation.</p><div class="quote-mini" id="quote-mini"></div><p class="quote-process">Your estimate is a planning guide. It does not create an order, payment or service agreement.</p><a class="text-link" href="#estimate-form">Edit my choices</a></div>
+        <form class="quote-form" id="quote-request-form">
+          <div class="field-pair"><div><label class="field-label" for="quote-name">Your name <span>(required)</span></label><input id="quote-name" name="name" autocomplete="name" maxlength="100" required></div><div><label class="field-label" for="quote-email">Email address <span>(required)</span></label><input id="quote-email" name="email" type="email" autocomplete="email" maxlength="254" required></div></div>
+          <label class="field-label" for="quote-notes">Anything else we should know? <span>(optional)</span></label><textarea id="quote-notes" name="notes" rows="4" maxlength="600" placeholder="Your business, a website you like, or something special your visitors need."></textarea>
+          <p class="quote-privacy">Your contact details are not stored by this page. Preparing an email opens your own email app; review it and press Send there. <a href="privacy.html#estimates" target="_blank" rel="noopener">How your information is handled</a></p>
+          <button type="submit" class="button button-dark">Prepare my quotation email</button>
+          <button type="button" class="quote-copy-button" id="copy-request">Copy request instead</button>
+          <p id="quote-status" role="status" aria-live="polite"></p>
+          <details class="request-details"><summary>View the full request</summary><label for="request-text" class="visually-hidden">Quotation request text</label><textarea id="request-text" readonly rows="10"></textarea></details>
+          <p class="quote-recipient">Current business inbox: <a href="mailto:fmbandco@gmail.com">fmbandco@gmail.com</a></p>
+        </form>
+      </div>
+    </section>
+    <div class="manual-copy container" id="manual-copy" hidden><label for="manual-copy-text">Copy this text</label><textarea id="manual-copy-text" rows="4" readonly></textarea><button type="button" id="close-manual-copy">Close</button></div>
+  </main>
+  <a class="mobile-estimate-bar" id="mobile-estimate-bar" href="#estimate-summary" hidden><span><small id="mobile-price-label">Estimated setup</small><strong id="mobile-total"></strong></span><span class="mobile-review-label">View estimate</span></a>
+  <article class="estimate-print" id="estimate-print" aria-label="Printable website estimate"><pre id="print-content"></pre></article>
+  <footer class="footer"><div class="container footer-main">
+    <div class="footer-brand-block"><a class="brand brand-footer" href="#top" aria-label="The Sterlings, back to top"><span class="brand-symbol" aria-hidden="true"><img src="logo-symbol-reversed.svg" alt=""></span><span class="brand-divider" aria-hidden="true"></span><span class="brand-wordmark"><span class="brand-the">THE</span><span class="brand-sterlings">STERLINGS</span></span></a><p>Digital spaces and practical digital solutions for individuals, professionals and growing businesses.</p><a class="footer-email" href="mailto:fmbandco@gmail.com">fmbandco@gmail.com</a></div>
+    <nav class="footer-links" aria-label="Footer navigation"><a href="index.html#who-we-help">Who we help</a><a href="index.html#digital-spaces">Digital spaces</a><a href="index.html#digital-solutions">Digital solutions</a><a href="index.html#solutions">Service options</a><a href="studio.html">Website Studio</a><a href="showroom.html" aria-current="page">Showroom</a><a href="index.html#questions">Common questions</a><a href="index.html#contact">Get in touch</a><a href="privacy.html">Privacy information</a></nav>
+  </div><div class="container footer-bottom"><span>© <span id="year">2026</span> THE STERLINGS. DIGITAL SPACES, THOUGHTFULLY MADE.</span><a href="#top">BACK TO TOP</a></div></footer>
+</body>
+</html>

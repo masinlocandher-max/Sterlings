@@ -1,5 +1,15 @@
 # THE STERLINGS
 
+## November 8, 2026: website estimate review page
+
+`estimate.html` adds a responsive website estimator for project builds and rental inquiries. Visitors choose website type, page count, design direction, copy help, features, care, domain needs and timing. Costs update with an itemized one-time/monthly breakdown and a first-year illustration. Custom systems, checkout, rush work and sites over 20 pages require a separate quotation and are not silently included in a fixed total.
+
+Visitors can print/save PDF, download a text summary, save non-personal choices on their device, share an allowlisted configuration link, or prepare a quotation email. Preparing the email does not send it. Contact details and project notes are never saved to local storage or included in share links.
+
+**Pricing is proposed for review, not approved for customer publication.** The page and every generated output retain that status. Keep this branch on a review deployment until rates are agreed. See `docs/estimate-pricing-review.md` for proposed rates, example totals, exclusions and the publication checklist. `estimate-pricing.js` is the single rate card; `estimate-model.js` contains pure calculations.
+
+Run arithmetic and input validation checks with `node --test tests/estimate-model.test.cjs`.
+
 ## November 6, 2026: digital presence positioning and visitor clarity
 
 The corporate homepage is now structured around a plain-language offer:
