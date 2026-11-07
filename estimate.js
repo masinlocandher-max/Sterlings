@@ -9,6 +9,7 @@
   const form = $('estimate-form');
   let state = model.normalize(model.defaults);
   let announcementTimer;
+  let copyReturnFocus;
   const make = (tag, className, text) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -184,13 +185,14 @@
       if (!navigator.clipboard) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(text); $(statusId).textContent = successMessage;
     } catch {
+      copyReturnFocus = document.activeElement;
       $('manual-copy-text').value = text; $('manual-copy').hidden = false;
       $('manual-copy').scrollIntoView({ behavior: 'auto', block: 'center' });
       $('manual-copy-text').focus(); $('manual-copy-text').select();
       $(statusId).textContent = 'Automatic copying is unavailable. The text is shown below; select and copy it manually.';
     }
   }
-  $('close-manual-copy').addEventListener('click', () => { $('manual-copy').hidden = true; $('share-estimate').focus(); });
+  $('close-manual-copy').addEventListener('click', () => { $('manual-copy').hidden = true; (copyReturnFocus instanceof HTMLElement ? copyReturnFocus : $('share-estimate')).focus(); });
   $('share-estimate').addEventListener('click', () => copyOrShow(chosenURL(), 'estimate-action-status', 'Link copied. It includes your choices only, not your contact details or notes.'));
   $('copy-request').addEventListener('click', () => copyOrShow(requestText(), 'quote-status', 'Request copied. Paste it into an email to ' + pricing.inbox + ' and send it when ready.'));
   $('print-estimate').addEventListener('click', () => { refreshRequest(); window.print(); });

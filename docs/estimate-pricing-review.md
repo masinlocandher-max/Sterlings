@@ -59,3 +59,10 @@ These are proposed budgeting assumptions, not researched market statistics or pr
 - No contact details in saved choices or share links. Local saving is opt-in. Reset removes saved choices.
 - The full request can be copied or viewed even when a device cannot open an email app. No message is sent by the page.
 - More than 20 pages, custom systems and rush timelines mark the result as a priced portion, with unpriced work listed explicitly.
+
+## Verification completed November 8, 2026
+
+- Nine Node tests pass, including 2,268 representative pricing combinations, required unpriced features, duplicate feature removal, malformed input, URL round trips and Manila date formatting.
+- Chromium browser checks pass for interactive prices, rental/care separation, custom scope flags, opt-in saving, reset, shared selections, no stored/shared contact information, clipboard-denial fallback, downloaded text, print/PDF output, prepared email content and keyboard selection. No messages were sent.
+- No horizontal overflow on the estimator, homepage or Showroom at 320, 390, 768, 960, 1024, 1200 and 1440 CSS pixels. Mobile menu and the no-JavaScript inquiry fallback were checked.
+- These checks used Chromium with mobile viewport emulation, not physical iOS or Android devices. No payment, customer hosting or subscription fulfillment was tested or activated.

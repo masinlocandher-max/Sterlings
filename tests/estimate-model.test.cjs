@@ -74,7 +74,7 @@ test('reports retain proposed status, exclusions, rate version and Manila date',
   assert.match(text, /not a contract term/);
 });
 
-test('all option combinations produce finite, nonnegative, ordered totals with correct yearly arithmetic', () => {
+test('2,268 representative scope combinations produce ordered totals with correct yearly arithmetic', () => {
   for (const service of Object.keys(pricing.services)) {
     for (const type of Object.keys(pricing.types)) {
       for (let pages = 1; pages <= 21; pages++) {
